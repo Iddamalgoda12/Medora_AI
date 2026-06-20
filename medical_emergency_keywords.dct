@@ -1,0 +1,373 @@
+# ============================================================
+# MEDICAL EMERGENCY KEYWORDS DICTIONARY
+# Purpose : Response Classifier – Emergency Detection Layer
+# Agent   : Medical Subscription AI Agent
+# Version : 1.0.0
+# Format  : CATEGORY > SEVERITY > KEYWORDS
+# Severity: CRITICAL (immediate 911) | HIGH (urgent care) | MODERATE (monitor)
+# ============================================================
+
+[CARDIAC]
+# Heart attack, cardiac arrest, chest pain
+SEVERITY=CRITICAL
+KEYWORDS=
+    heart attack,
+    cardiac arrest,
+    chest pain,
+    chest tightness,
+    chest pressure,
+    crushing chest,
+    heart stopped,
+    no pulse,
+    palpitations severe,
+    heart racing uncontrolled,
+    left arm pain,
+    jaw pain radiating,
+    sudden shortness of breath,
+    sweating chest pain,
+    cpr needed,
+    defibrillator,
+    aed needed,
+    i think im having a heart attack,
+    my heart stopped,
+    heart failure acute
+
+[RESPIRATORY]
+# Breathing emergencies, asphyxiation
+SEVERITY=CRITICAL
+KEYWORDS=
+    can't breathe,
+    cannot breathe,
+    not breathing,
+    stopped breathing,
+    choking,
+    airway blocked,
+    airway obstruction,
+    blue lips,
+    cyanosis,
+    gasping for air,
+    severe asthma attack,
+    anaphylaxis breathing,
+    throat closing,
+    oxygen low,
+    suffocating,
+    heimlich,
+    respiratory arrest,
+    no airway,
+    struggling to breathe,
+    inhaler not working,
+    oxygen saturation dropping
+
+[NEUROLOGICAL]
+# Stroke, seizure, loss of consciousness
+SEVERITY=CRITICAL
+KEYWORDS=
+    stroke,
+    face drooping,
+    arm weakness sudden,
+    speech slurred sudden,
+    sudden confusion,
+    sudden severe headache,
+    worst headache of my life,
+    seizure,
+    convulsions,
+    fits,
+    unresponsive,
+    unconscious,
+    passed out,
+    fainted and not waking,
+    loss of consciousness,
+    not waking up,
+    eyes rolled back,
+    brain bleed,
+    paralysis sudden,
+    vision loss sudden,
+    numbness one side,
+    balance loss sudden,
+    fast acronym,
+    signs of stroke
+
+[MENTAL_HEALTH_CRISIS]
+# Suicidal ideation, self-harm, psychosis
+SEVERITY=CRITICAL
+KEYWORDS=
+    want to kill myself,
+    want to die,
+    going to end it,
+    suicidal,
+    suicide attempt,
+    took too many pills,
+    overdose intentional,
+    self harm severe,
+    cutting deep,
+    bleeding from self harm,
+    going to hurt myself,
+    no reason to live,
+    saying goodbye,
+    final note,
+    suicide note,
+    harming myself now,
+    threatening suicide,
+    crisis now,
+    i have a plan to die
+
+[TRAUMA_AND_INJURY]
+# Severe physical trauma, bleeding, accidents
+SEVERITY=CRITICAL
+KEYWORDS=
+    severe bleeding,
+    uncontrolled bleeding,
+    bleeding won't stop,
+    arterial bleeding,
+    blood everywhere,
+    deep wound,
+    stab wound,
+    gunshot,
+    shot,
+    stabbed,
+    head injury severe,
+    skull fracture,
+    spinal injury,
+    neck injury,
+    broken neck,
+    compound fracture,
+    bone through skin,
+    internal bleeding suspected,
+    crush injury,
+    amputation,
+    limb severed,
+    severe burn,
+    chemical burn face,
+    eye injury severe,
+    hit by car,
+    car accident injury,
+    fall from height,
+    trauma major
+
+[ALLERGIC_ANAPHYLAXIS]
+# Severe allergic reactions
+SEVERITY=CRITICAL
+KEYWORDS=
+    anaphylaxis,
+    anaphylactic shock,
+    allergic reaction severe,
+    throat swelling,
+    tongue swelling,
+    lips swelling rapidly,
+    epinephrine needed,
+    epipen used,
+    epipen not working,
+    hives and breathing problems,
+    allergic and can't breathe,
+    bee sting reaction severe,
+    nut allergy reaction,
+    food allergy severe,
+    whole body reaction,
+    swelling spreading fast
+
+[DIABETIC_EMERGENCY]
+# Hypoglycemia/hyperglycemia crisis
+SEVERITY=CRITICAL
+KEYWORDS=
+    blood sugar very low,
+    hypoglycemia severe,
+    diabetic coma,
+    sugar crashed,
+    insulin overdose,
+    dka,
+    diabetic ketoacidosis,
+    blood sugar 400+,
+    blood sugar unreadable,
+    unconscious diabetic,
+    glucose very low,
+    shaking uncontrolled diabetic,
+    diabetic not waking up,
+    sugar emergency
+
+[POISONING_OVERDOSE]
+# Accidental or intentional poisoning
+SEVERITY=CRITICAL
+KEYWORDS=
+    overdose,
+    drug overdose,
+    took too many,
+    pill overdose,
+    swallowed poison,
+    ingested toxic,
+    chemical ingestion,
+    carbon monoxide,
+    co poisoning,
+    gas leak inhaled,
+    poisoned,
+    toxin exposure,
+    fentanyl overdose,
+    opioid overdose,
+    narcan needed,
+    naloxone needed,
+    medication overdose accidental,
+    child swallowed medication,
+    household chemical swallowed,
+    bleach ingested,
+    battery swallowed
+
+[OBSTETRIC_EMERGENCY]
+# Pregnancy and childbirth emergencies
+SEVERITY=CRITICAL
+KEYWORDS=
+    baby coming now,
+    delivering now,
+    crowning,
+    cord prolapse,
+    placenta previa bleeding,
+    heavy vaginal bleeding pregnancy,
+    preeclampsia severe,
+    eclampsia seizure,
+    abruption,
+    miscarriage heavy bleeding,
+    ectopic pregnancy,
+    labor emergency,
+    premature birth now,
+    baby not moving at all,
+    fetal emergency
+
+[PEDIATRIC_EMERGENCY]
+# Child-specific emergencies
+SEVERITY=CRITICAL
+KEYWORDS=
+    child not breathing,
+    baby not breathing,
+    infant unresponsive,
+    baby choking,
+    child choking,
+    toddler swallowed,
+    newborn blue,
+    febrile seizure,
+    baby seizing,
+    child unconscious,
+    infant convulsing,
+    sudden infant death,
+    sids,
+    child abuse emergency,
+    child hit head severe,
+    pediatric code
+
+[HEAT_AND_ENVIRONMENTAL]
+# Heatstroke, hypothermia, drowning
+SEVERITY=CRITICAL
+KEYWORDS=
+    heatstroke,
+    heat stroke,
+    heat exhaustion severe,
+    body temp 104+,
+    hypothermia severe,
+    frozen limbs,
+    frostbite severe,
+    drowning,
+    near drowning,
+    water inhaled,
+    electrocution,
+    electric shock,
+    lightning strike,
+    radiation exposure,
+    extreme sunburn severe
+
+# ============================================================
+# HIGH SEVERITY — Urgent but not immediately life-threatening
+# Requires urgent care visit or ER evaluation within hours
+# ============================================================
+
+[HIGH_SEVERITY_FLAGS]
+SEVERITY=HIGH
+KEYWORDS=
+    high fever 103,
+    fever in infant,
+    persistent vomiting,
+    severe dehydration,
+    can't keep fluids down,
+    severe abdominal pain,
+    appendicitis suspected,
+    blood in stool,
+    blood in urine,
+    coughing blood,
+    vomiting blood,
+    severe migraine,
+    eye infection spreading,
+    severe allergic rash,
+    broken bone suspected,
+    dislocation,
+    deep cut needs stitches,
+    urinary retention,
+    signs of infection spreading,
+    kidney stone severe,
+    chest infection severe,
+    mental health deteriorating,
+    panic attack severe,
+    blood pressure very high
+
+# ============================================================
+# TRIGGER PHRASES — Conversational signals of emergency
+# (Natural language patterns users may express)
+# ============================================================
+
+[TRIGGER_PHRASES]
+SEVERITY=CRITICAL
+KEYWORDS=
+    please help me,
+    i need help now,
+    call 911,
+    call an ambulance,
+    send an ambulance,
+    emergency,
+    it's an emergency,
+    help me please,
+    i'm dying,
+    someone is dying,
+    they stopped breathing,
+    she collapsed,
+    he collapsed,
+    they won't wake up,
+    something is very wrong,
+    this is serious,
+    i'm scared something is wrong,
+    not responding,
+    help now
+
+# ============================================================
+# EXCLUSION KEYWORDS — Prevent false positives
+# (Context words that reduce emergency likelihood)
+# ============================================================
+
+[EXCLUSION_CONTEXT]
+# If these words accompany emergency keywords, lower alert confidence
+KEYWORDS=
+    history of,
+    in the past,
+    years ago,
+    when i was,
+    my friend had,
+    i read that,
+    article about,
+    movie scene,
+    book about,
+    fictional,
+    hypothetically,
+    asking for a friend,
+    research question,
+    school project,
+    just wondering,
+    curious about,
+    general question
+
+# ============================================================
+# CLASSIFIER BEHAVIOR NOTES
+# ============================================================
+# 1. Match is case-insensitive.
+# 2. Partial matches are allowed (e.g. "breathing" matches "not breathing").
+# 3. When CRITICAL keyword is detected → immediately route to emergency protocol.
+# 4. When HIGH keyword is detected → flag for urgent human review or urgent care advice.
+# 5. EXCLUSION keywords reduce confidence score but do NOT fully suppress CRITICAL alerts.
+# 6. Always recommend calling emergency services (911 or local equivalent) for CRITICAL matches.
+# 7. Log all CRITICAL matches with timestamp for medical audit trail.
+# ============================================================
+# END OF DICTIONARY
+# ============================================================
