@@ -1,18 +1,27 @@
-from typing import TypedDict, List
+from typing import TypedDict, List, Dict, Any, Optional
 
 
-class AgentState(TypedDict):
+class State(TypedDict):
     query: str
-    response: str
-    routes: list[str]
-    retrieved_docs: List[str]
-    execution_trace: List[str]
-    chat_history: List[dict]
-   
-    rag_result: str
-    memory_result: str
-    web_result: str
-    tool_result: str
-    chat_result: str
 
-    final_answer: str
+    next_task: Optional[str]
+
+    pending_tasks: List[str]
+
+    completed_tasks: List[str]
+
+    agent_results: List[Dict[str, Any]]
+
+    decision_scores: Dict[str, int]
+
+    execution_trace: List[str]
+
+    final_response: str
+
+    clarification_done: bool
+
+    user_context: Dict[str, Any]
+
+    metadata: Dict[str, Any]
+
+    rag_result: str

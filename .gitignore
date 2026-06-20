@@ -14,3 +14,9 @@ __pycache__/
 # Database
 *.sqlite
 *.db
+
+AI_MODELS/
+
+# Qdrant
+qdrant/storage/
+qdrant/snapshots/
