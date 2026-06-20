@@ -7,5 +7,11 @@ llm = ChatGoogleGenerativeAI(
     temperature=0.5,
 )
 
+
 def get_llm():
     return llm
+
+
+def ask_gemini(prompt: str) -> str:
+    response = llm.invoke(prompt)
+    return response.content

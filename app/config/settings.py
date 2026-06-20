@@ -8,9 +8,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 class Settings(BaseSettings):
     # Required
     GEMINI_API_KEY: str
-    GROQ_API_KEY: Optional[str] = None
 
-    # Optional for now
+    # Optional
+    GROQ_API_KEY: Optional[str] = None
+    TAVILY_API_KEY: Optional[str] = None
+
     QDRANT_URL: Optional[str] = None
     QDRANT_PORT: Optional[int] = None
 
