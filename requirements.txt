@@ -1,0 +1,32 @@
+# LLM
+google-generativeai
+
+# Agent Framework
+langgraph
+langchain-core
+langchain-community
+
+# Frontend
+chainlit
+
+# Vector DB
+qdrant-client
+
+# Embeddings
+sentence-transformers
+FlagEmbedding
+
+# Document Processing
+pymupdf
+unstructured
+python-docx
+
+# Memory
+mem0ai
+
+# Utilities
+python-dotenv
+pydantic
+torch
+torchvision
+torchaudio
