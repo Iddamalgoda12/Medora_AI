@@ -16,3 +16,8 @@ __pycache__/
 *.db
 
 venv/
+AI_MODELS/
+
+# Qdrant
+qdrant/storage/
+qdrant/snapshots/
