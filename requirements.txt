@@ -1,3 +1,5 @@
+# python -m chainlit run app/ui/chainlit_app.py
+
 # LLM
 google-generativeai
 langchain-google-genai
