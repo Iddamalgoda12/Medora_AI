@@ -1,0 +1,47 @@
+{
+  "status": "🟢 Stable",
+  "conditions": [
+    "Viral upper respiratory tract infection",
+    "Post-viral cough",
+    "Borderline elevated fasting glucose",
+    "Borderline elevated cholesterol levels"
+  ],
+  "medicines": [],
+  "allergies": [],
+  "notes": "Clinical Consultation Report received. Assessment: Likely viral upper respiratory tract infection with post-viral cough. Plan includes hydration and symptomatic treatment. Previous clinical context: Interpretation of latest lab results from 2024-05-15: Borderline elevated fasting glucose and cholesterol levels. Clinical correlation advised. Received Laboratory Investigation Report (sample_clinical_report_02.pdf) with patient ID LAB-2026-014, age 62, sex Female. Note: Demographic details in this report conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male). The lab results within this report are identical to those previously recorded on 2024-05-15 and interpreted as borderline elevated fasting glucose and cholesterol levels. Recommendations for dietary modification, regular exercise, and repeat testing in 3 months are consistent with current plan.",
+  "vitals": {
+    "temperature_c": 37.2,
+    "blood_pressure_mmhg": "128/82",
+    "heart_rate_bpm": 78,
+    "spo2_percent": 97
+  },
+  "chief_complaint": "Persistent cough and mild shortness of breath for 2 weeks.",
+  "history_of_present_illness": "Patient reports a dry cough worsening at night. No chest pain. Occasional fatigue.",
+  "patient_demographics": {
+    "patient_id": "CLN-2026-001",
+    "age": 45,
+    "sex": "Male"
+  },
+  "lab_results": {
+    "date_of_report": "2024-05-15",
+    "requested_tests": [
+      "Complete Blood Count (CBC)",
+      "Fasting Blood Glucose",
+      "Lipid Profile"
+    ],
+    "results": {
+      "Hemoglobin": "12.8 g/dL",
+      "WBC Count": "7.4 x10^9/L",
+      "Platelets": "260 x10^9/L",
+      "Fasting Blood Glucose": "118 mg/dL",
+      "Total Cholesterol": "212 mg/dL"
+    }
+  },
+  "recommendations": [
+    "Dietary modification",
+    "Regular exercise",
+    "Repeat testing in 3 months",
+    "Follow-up in 2 weeks if symptoms persist"
+  ],
+  "last_updated": "2026-07-06"
+}

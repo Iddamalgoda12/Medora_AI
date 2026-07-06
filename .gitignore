@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+.venv/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+
+# Database
+*.sqlite
+*.db
+
+venv/
+AI_MODELS/
+
+# Qdrant
+qdrant/storage/
+qdrant/snapshots/

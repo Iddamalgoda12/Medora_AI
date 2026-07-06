@@ -1,0 +1,28 @@
+/* Health Profile Sidebar */
+
+#side-view-content .prose {
+    font-size: 13px !important;
+}
+
+#side-view-content h1 {
+    font-size: 22px !important;
+    margin-bottom: 12px;
+}
+
+#side-view-content h2 {
+    font-size: 16px !important;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+#side-view-content p,
+#side-view-content div,
+#side-view-content li {
+    font-size: 13px !important;
+    line-height: 1.4;
+}
+
+#side-view-content ul {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
