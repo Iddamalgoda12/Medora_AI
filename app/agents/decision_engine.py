@@ -1,9 +1,61 @@
+import re
+from pathlib import Path
+
 from pydantic import BaseModel, Field
 
 from app.llms.gemini import get_llm
 from app.memory.conversation import last_exchange_context
 
 llm = get_llm()
+
+_EMERGENCY_KEYWORDS_PATH = Path(__file__).resolve().parents[2] / "medical_emergency_keywords.dct"
+_emergency_keywords_cache: set[str] | None = None
+
+
+def normalize_text(text: str) -> str:
+    return " ".join(re.findall(r"\w+", text.lower()))
+
+
+def load_emergency_keywords() -> set[str]:
+    global _emergency_keywords_cache
+    if _emergency_keywords_cache is not None:
+        return _emergency_keywords_cache
+
+    keywords: set[str] = set()
+    if not _EMERGENCY_KEYWORDS_PATH.exists():
+        _emergency_keywords_cache = keywords
+        return keywords
+
+    content = _EMERGENCY_KEYWORDS_PATH.read_text(encoding="utf-8")
+    collecting = False
+    for raw_line in content.splitlines():
+        line = raw_line.strip()
+        if not line:
+            collecting = False
+            continue
+        if line.startswith("["):
+            collecting = False
+            continue
+        if line.startswith("KEYWORDS="):
+            collecting = True
+            continue
+        if collecting:
+            line = line.split("#", 1)[0].strip().rstrip(",")
+            if line:
+                keywords.add(normalize_text(line))
+
+    _emergency_keywords_cache = keywords
+    return keywords
+
+
+def emergency_keywords_present(query: str) -> bool:
+    if not query:
+        return False
+    normalized_query = normalize_text(query)
+    for keyword in load_emergency_keywords():
+        if keyword and keyword in normalized_query:
+            return True
+    return False
 
 
 def enforce_explicit_service_intents(query, scores):
@@ -149,6 +201,9 @@ Return only the scores.
         result
     ).model_dump()
     scores = enforce_explicit_service_intents(query, scores)
+
+    if emergency_keywords_present(query):
+        scores["emergency_agent"] = max(scores["emergency_agent"], 10)
 
     max_score = max(
         scores.values()
