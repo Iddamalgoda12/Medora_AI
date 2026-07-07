@@ -1,7 +1,5 @@
 """
-upload_service.py
------------------
-Single-responsibility service: accept raw Chainlit attachment objects and
+Single-responsibility-accept raw Chainlit attachment objects and
 persist them to the canonical PDF store directory.
 """
 
@@ -12,9 +10,6 @@ import shutil
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
-
-# Canonical location where MedoraAI PDFs are stored and ingested from.
-# Resolved relative to this file so it works regardless of CWD.
 PDF_DIR: Path = (
     Path(__file__).resolve().parent.parent / "rag" / "data" / "pdfs"
 )

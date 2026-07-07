@@ -1,37 +1,15 @@
-"""
-chainlit_app.py
----------------
-Entry point for the MedoraAI Chainlit UI.
-
-PDF upload pipeline (triggered when the user attaches PDFs via the paperclip):
-  1. Save PDFs  →  upload_service
-  2. Extract text  →  rag_service
-  3. Update health profile via Gemini  →  health_profile_service
-  4. Ingest embeddings into Qdrant  →  rag_service
-  5. Refresh sidebar  →  health_profile (UI helper)
-
-Normal text messages are forwarded to the LangGraph agent graph.
-"""
-
 from __future__ import annotations
-
 import logging
-
 import chainlit as cl
-
 from main import create_initial_state, run_agent
 from home import show_home
 from health_profile import show_health_profile
+from app.agents.emergency_agent import emergency_agent
 from app.services.upload_service import save_uploaded_pdfs
 from app.services.rag_service import extract_text_from_pdfs, ingest_pdfs_async
 from app.services.health_profile_service import update_profile_from_report
 
 logger = logging.getLogger(__name__)
-
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
 
 def _filter_pdfs(elements: list) -> list:
     """Return only the PDF attachments from a Chainlit message element list."""
@@ -41,25 +19,11 @@ def _filter_pdfs(elements: list) -> list:
         or (getattr(el, "name", "").lower().endswith(".pdf"))
     ]
 
-
-# ---------------------------------------------------------------------------
-# PDF upload pipeline
-# ---------------------------------------------------------------------------
-
 async def _handle_pdf_uploads(pdf_elements: list) -> None:
-    """Execute the full PDF processing pipeline and keep the user informed.
 
-    Steps:
-      1. Persist PDFs to disk.
-      2. Extract raw text.
-      3. Update health profile via Gemini.
-      4. Ingest embeddings into Qdrant.
-      5. Refresh the sidebar health profile.
-    """
     file_names = [el.name for el in pdf_elements]
     plural = "s" if len(file_names) > 1 else ""
 
-    # Acknowledge receipt immediately so the user isn't left waiting silently.
     status_msg = cl.Message(
         content=(
             f"📄 Received **{len(file_names)}** PDF{plural}: "
@@ -188,11 +152,16 @@ async def on_message(message: cl.Message) -> None:
     iteration = cl.user_session.get("iteration", 0) + 1
 
     try:
-        state = await run_agent(
-            state=state,
-            user_input=message.content,
-            iteration=iteration,
-        )
+        if state.get("emergency_confirmation_pending"):
+            state["query"] = message.content
+            state["iteration_count"] = iteration
+            state = await emergency_agent(state)
+        else:
+            state = await run_agent(
+                state=state,
+                user_input=message.content,
+                iteration=iteration,
+            )
     except Exception as exc:
         logger.exception("Agent graph raised an exception.")
         await cl.Message(
@@ -202,6 +171,13 @@ async def on_message(message: cl.Message) -> None:
 
     cl.user_session.set("state", state)
     cl.user_session.set("iteration", iteration)
+
+    emergency_steps = state.get("emergency_steps") or []
+    if emergency_steps:
+        for step in emergency_steps:
+            if step:
+                await cl.Message(content=step).send()
+        return
 
     response = state.get("response") or state.get("final_response", "")
     if response:

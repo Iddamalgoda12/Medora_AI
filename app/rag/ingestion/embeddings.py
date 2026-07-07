@@ -1,5 +1,4 @@
 from pathlib import Path
-
 import pyarrow as pa
 
 if not hasattr(pa, "PyExtensionType"):

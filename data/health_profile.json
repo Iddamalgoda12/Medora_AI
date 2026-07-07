@@ -1,47 +1,81 @@
 {
-  "status": "🟢 Stable",
+  "status": "🟡 Monitor",
   "conditions": [
-    "Viral upper respiratory tract infection",
-    "Post-viral cough",
-    "Borderline elevated fasting glucose",
-    "Borderline elevated cholesterol levels"
+    "Stable angina",
+    "Hypertension",
+    "Type 2 diabetes mellitus",
+    "Hyperlipidemia"
   ],
-  "medicines": [],
-  "allergies": [],
-  "notes": "Clinical Consultation Report received. Assessment: Likely viral upper respiratory tract infection with post-viral cough. Plan includes hydration and symptomatic treatment. Previous clinical context: Interpretation of latest lab results from 2024-05-15: Borderline elevated fasting glucose and cholesterol levels. Clinical correlation advised. Received Laboratory Investigation Report (sample_clinical_report_02.pdf) with patient ID LAB-2026-014, age 62, sex Female. Note: Demographic details in this report conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male). The lab results within this report are identical to those previously recorded on 2024-05-15 and interpreted as borderline elevated fasting glucose and cholesterol levels. Recommendations for dietary modification, regular exercise, and repeat testing in 3 months are consistent with current plan.",
+  "medicines": [
+    "Aspirin 81 mg orally once daily",
+    "Atorvastatin 40 mg orally at night",
+    "Metformin 1000 mg orally twice daily with meals",
+    "Amlodipine 5 mg orally once daily",
+    "Losartan 50 mg orally once daily",
+    "Glyceryl trinitrate sublingual tablets as needed for chest pain"
+  ],
+  "allergies": [
+    "No known drug allergies"
+  ],
+  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The newly uploaded 'Medical Discharge Summary' is for Patient Name: John Perera, Age: 58 years, Sex: Male, Hospital Number: MRN-2026-104582. This conflicts significantly with the primary profile's original patient ID (CLN-2026-001, age 45, sex Male). The clinical context (chest pain, stable angina, hypertension, type 2 diabetes, hyperlipidemia) is entirely distinct from the previous profile's context (viral URI, post-viral cough, borderline labs). The profile has been updated based on the new report, assuming it represents the current patient's status, but this conflict requires urgent clarification. (Previous note: Demographic details in a prior Laboratory Investigation Report (LAB-2026-014, age 62, sex Female) also conflicted with the primary profile.) This update reflects a recent hospitalization (12-15 June 2026) for intermittent central chest discomfort, diagnosed as stable angina, hypertension, type 2 diabetes mellitus, and hyperlipidemia. Investigations included normal cardiac troponins, elevated fasting glucose (162 mg/dL), HbA1c (7.8%), and elevated LDL cholesterol (148 mg/dL). Patient discharged on Aspirin, Atorvastatin, Metformin, Amlodipine, Losartan, and sublingual Glyceryl trinitrate, with emphasis on lifestyle modification, medication compliance, and home monitoring. Specific follow-ups with cardiology and PCP are recommended.",
   "vitals": {
-    "temperature_c": 37.2,
-    "blood_pressure_mmhg": "128/82",
-    "heart_rate_bpm": 78,
-    "spo2_percent": 97
+    "temperature_c": 36.8,
+    "blood_pressure_mmhg": "158/96",
+    "heart_rate_bpm": 94,
+    "spo2_percent": 98,
+    "respiratory_rate_bpm": 18
   },
-  "chief_complaint": "Persistent cough and mild shortness of breath for 2 weeks.",
-  "history_of_present_illness": "Patient reports a dry cough worsening at night. No chest pain. Occasional fatigue.",
+  "chief_complaint": "Intermittent central chest discomfort lasting approximately two hours, described as pressure-like, radiating to the left shoulder, and associated with mild shortness of breath and sweating.",
+  "history_of_present_illness": "Chest discomfort began while climbing stairs and improved partially with rest. Denied fever, cough, abdominal pain, or recent trauma. Medication adherence was inconsistent during the previous month.",
   "patient_demographics": {
     "patient_id": "CLN-2026-001",
-    "age": 45,
-    "sex": "Male"
+    "name": "John Perera",
+    "age": 58,
+    "sex": "Male",
+    "hospital_number": "MRN-2026-104582"
   },
   "lab_results": {
-    "date_of_report": "2024-05-15",
+    "date_of_report": "2026-06-15",
     "requested_tests": [
+      "Electrocardiogram (ECG)",
+      "Cardiac Troponin",
       "Complete Blood Count (CBC)",
+      "Serum Creatinine",
       "Fasting Blood Glucose",
-      "Lipid Profile"
+      "HbA1c",
+      "Lipid Profile (LDL Cholesterol)",
+      "Chest Radiograph",
+      "Transthoracic Echocardiography"
     ],
     "results": {
-      "Hemoglobin": "12.8 g/dL",
-      "WBC Count": "7.4 x10^9/L",
-      "Platelets": "260 x10^9/L",
-      "Fasting Blood Glucose": "118 mg/dL",
-      "Total Cholesterol": "212 mg/dL"
+      "ECG Findings": "Nonspecific ST-segment changes, no acute ST-elevation",
+      "Cardiac Troponin": "Within normal reference range",
+      "CBC": "Unremarkable",
+      "Serum Creatinine": "0.9 mg/dL",
+      "eGFR": "> 90 mL/min/1.73 m²",
+      "Fasting Blood Glucose": "162 mg/dL",
+      "HbA1c": "7.8%",
+      "LDL Cholesterol": "148 mg/dL",
+      "Chest Radiograph": "No acute cardiopulmonary abnormality",
+      "Ejection Fraction": "60%",
+      "Valvular Disease": "No significant"
     }
   },
   "recommendations": [
-    "Dietary modification",
-    "Regular exercise",
-    "Repeat testing in 3 months",
-    "Follow-up in 2 weeks if symptoms persist"
+    "Follow up with cardiology clinic within two weeks",
+    "Follow up with primary care physician within one week for blood pressure and diabetes review",
+    "Home blood pressure monitoring",
+    "Home blood glucose monitoring",
+    "Low-sodium, heart-healthy diet",
+    "Regular moderate exercise",
+    "Seek immediate medical attention if chest pain becomes severe, persistent, occurs at rest, or is accompanied by shortness of breath, dizziness, or loss of consciousness"
+  ],
+  "past_medical_history": [
+    "Hypertension (10 years)",
+    "Type 2 Diabetes Mellitus (8 years)",
+    "Hyperlipidemia",
+    "No known chronic kidney disease",
+    "No previous myocardial infarction"
   ],
   "last_updated": "2026-07-06"
 }

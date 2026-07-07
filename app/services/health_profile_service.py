@@ -1,31 +1,22 @@
 """
-health_profile_service.py
---------------------------
-Single-responsibility service: load, update, and persist the patient health
+Single-responsibility service-load, update, and persist the patient health
 profile stored in ``data/health_profile.json``.
-
-The profile is a free-form JSON object that Gemini populates/extends each time
-a new medical report is processed.
 """
 
 from __future__ import annotations
-
 from datetime import date
 import json
 import logging
 import re
 from pathlib import Path
-
 from app.llms.gemini import ask_gemini
 
 logger = logging.getLogger(__name__)
 
-# Canonical path to the health profile JSON file.
 PROFILE_PATH: Path = (
     Path(__file__).resolve().parent.parent.parent / "data" / "health_profile.json"
 )
 
-# Minimum set of keys that every valid profile must contain.
 _REQUIRED_KEYS: frozenset[str] = frozenset(
     {"conditions", "medicines", "allergies", "last_updated"}
 )
@@ -39,10 +30,6 @@ _DEFAULT_PROFILE: dict = {
     "notes": "",
 }
 
-
-# ---------------------------------------------------------------------------
-# I/O helpers
-# ---------------------------------------------------------------------------
 
 def load_health_profile() -> dict:
     """Return the current health profile.
