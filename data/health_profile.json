@@ -1,14 +1,21 @@
 {
-  "status": "🟢 Stable",
+  "status": "🟡 Monitor",
   "conditions": [
     "Viral upper respiratory tract infection",
     "Post-viral cough",
-    "Borderline elevated fasting glucose",
-    "Borderline elevated cholesterol levels"
+    "Prediabetes",
+    "Hypercholesterolemia",
+    "Bacterial infection",
+    "Vitamin D deficiency"
   ],
-  "medicines": [],
+  "medicines": [
+    "Metformin 500mg Tablets",
+    "Panadol 500mg Tablets (Paracetamol)",
+    "Amoxicillin 500mg Capsules",
+    "Atorvastatin 20mg Tablets"
+  ],
   "allergies": [],
-  "notes": "Clinical Consultation Report received. Assessment: Likely viral upper respiratory tract infection with post-viral cough. Plan includes hydration and symptomatic treatment. Previous clinical context: Interpretation of latest lab results from 2024-05-15: Borderline elevated fasting glucose and cholesterol levels. Clinical correlation advised. Received Laboratory Investigation Report (sample_clinical_report_02.pdf) with patient ID LAB-2026-014, age 62, sex Female. Note: Demographic details in this report conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male). The lab results within this report are identical to those previously recorded on 2024-05-15 and interpreted as borderline elevated fasting glucose and cholesterol levels. Recommendations for dietary modification, regular exercise, and repeat testing in 3 months are consistent with current plan.",
+  "notes": "Clinical Consultation Report received. Assessment: Likely viral upper respiratory tract infection with post-viral cough. Plan includes hydration and symptomatic treatment. Previous clinical context: Interpretation of latest lab results from 2024-05-15: Borderline elevated fasting glucose and cholesterol levels. Clinical correlation advised. Received Laboratory Investigation Report (sample_clinical_report_02.pdf) with patient ID LAB-2026-014, age 62, sex Female. Note: Demographic details in this report conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male). The lab results within this report are identical to those previously recorded on 2024-05-15 and interpreted as borderline elevated fasting glucose and cholesterol levels. Recommendations for dietary modification, regular exercise, and repeat testing in 3 months are consistent with current plan. Prescription received on 2026-07-06 (Ref No: RX-2026-99412) from COLOMBO MEDICAL CARE & GENERAL CLINIC by DR. K. L. WICKRAMASINGHE. Medications prescribed include Metformin 500mg Tablets and Panadol 500mg Tablets (Paracetamol). Note: Demographic details in this prescription (Patient: Hasindu Perera (Test Case), Age: 23, Sex: Male) conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male). Prescription received on 2026-07-06 (Ref No: RX-2026-88513) from CENTRAL WELLNESS & CARDIOLOGY CLINIC by DR. S. R. PERERA. Medications prescribed include Amoxicillin 500mg Capsules and Atorvastatin 20mg Tablets. Note: Demographic details in this prescription (Patient: Nimal Silva (Test Case), Age: 45, Sex: Male) are consistent with the primary profile (patient ID CLN-2026-001, age 45, sex Male). Received Hematology Report (Full Blood Count) (BC-2026-44102) on 2026-07-06. Findings include mild leukocytosis (WBC 11.8 x10^9 / L, HIGH) and low hemoglobin (12.1 g/dL, LOW) with microcytic tendencies. Note: Demographic details in this report (Patient: Hasindu Perera (Test Case), Age: 23, Sex: Male) conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male). Received General Health Lab Report (LAB-8829-X) on 2026-07-07. Findings include High Fast Blood Glucose (105 mg/dL) and Low Vitamin D (22 ng/mL). Note: Demographic details in this report (Patient: Test Patient) conflict with the primary profile (patient ID CLN-2026-001, age 45, sex Male).",
   "vitals": {
     "temperature_c": 37.2,
     "blood_pressure_mmhg": "128/82",
@@ -22,26 +29,130 @@
     "age": 45,
     "sex": "Male"
   },
-  "lab_results": {
-    "date_of_report": "2024-05-15",
-    "requested_tests": [
-      "Complete Blood Count (CBC)",
-      "Fasting Blood Glucose",
-      "Lipid Profile"
-    ],
-    "results": {
-      "Hemoglobin": "12.8 g/dL",
-      "WBC Count": "7.4 x10^9/L",
-      "Platelets": "260 x10^9/L",
-      "Fasting Blood Glucose": "118 mg/dL",
-      "Total Cholesterol": "212 mg/dL"
+  "lab_results": [
+    {
+      "date_of_report": "2024-05-15",
+      "report_type": "Mixed Panel (CBC, Fasting Blood Glucose, Lipid Profile)",
+      "requested_tests": [
+        "Complete Blood Count (CBC)",
+        "Fasting Blood Glucose",
+        "Lipid Profile"
+      ],
+      "results": {
+        "Hemoglobin": {
+          "value": "12.8",
+          "units": "g/dL"
+        },
+        "WBC Count": {
+          "value": "7.4",
+          "units": "x10^9/L"
+        },
+        "Platelets": {
+          "value": "260",
+          "units": "x10^9/L"
+        },
+        "Fasting Blood Glucose": {
+          "value": "118",
+          "units": "mg/dL",
+          "flag": "BORDERLINE ELEVATED"
+        },
+        "Total Cholesterol": {
+          "value": "212",
+          "units": "mg/dL",
+          "flag": "BORDERLINE ELEVATED"
+        }
+      },
+      "comments": "Borderline elevated fasting glucose and cholesterol levels. Clinical correlation advised."
+    },
+    {
+      "date_of_report": "2026-07-06",
+      "lab_ref_no": "BC-2026-44102",
+      "referred_by": "Dr. K. L. Wickramasinghe",
+      "reported_by": "Dr. Anura de Silva",
+      "report_type": "HEMATOLOGY REPORT (FULL BLOOD COUNT)",
+      "collected_date": "2026-07-06 08:30 AM",
+      "results": {
+        "Total White Blood Cell Count (WBC)": {
+          "value": "11.8",
+          "flag": "HIGH",
+          "reference_range": "4.0 - 11.0",
+          "units": "x10^9 / L"
+        },
+        "Red Blood Cell Count (RBC)": {
+          "value": "4.85",
+          "reference_range": "4.50 - 5.50",
+          "units": "x10^12 / L"
+        },
+        "Hemoglobin (Hb)": {
+          "value": "12.1",
+          "flag": "LOW",
+          "reference_range": "13.0 - 17.0",
+          "units": "g / dL"
+        },
+        "Packed Cell Volume (PCV)": {
+          "value": "39.2",
+          "reference_range": "37.0 - 50.0",
+          "units": "%"
+        },
+        "Mean Cell Volume (MCV)": {
+          "value": "84.5",
+          "reference_range": "80.0 - 99.0",
+          "units": "fL"
+        },
+        "Platelet Count": {
+          "value": "265",
+          "reference_range": "150 - 450",
+          "units": "x10^9 / L"
+        }
+      },
+      "comments": "Mild leukocytosis and microcytic tendencies observed. Correlate clinically.",
+      "patient_demographics_in_report": {
+        "patient_name": "Hasindu Perera (Test Case)",
+        "age": 23,
+        "gender": "Male"
+      }
+    },
+    {
+      "date_of_report": "2026-07-07",
+      "report_type": "General Health Lab Report",
+      "lab_ref_no": "LAB-8829-X",
+      "results": {
+        "Hemoglobin": {
+          "value": "14.2",
+          "units": "g/dL",
+          "reference_range": "13.5 - 17.5 g/dL",
+          "flag": "Normal"
+        },
+        "Fast Blood Glucose": {
+          "value": "105",
+          "units": "mg/dL",
+          "reference_range": "70 - 99 mg/dL",
+          "flag": "High"
+        },
+        "Total Cholesterol": {
+          "value": "190",
+          "units": "mg/dL",
+          "reference_range": "< 200 mg/dL",
+          "flag": "Normal"
+        },
+        "Vitamin D": {
+          "value": "22",
+          "units": "ng/mL",
+          "reference_range": "30 - 100 ng/mL",
+          "flag": "Low"
+        }
+      },
+      "comments": "This is a simulated medical report for development testing purposes only.",
+      "patient_demographics_in_report": {
+        "patient_name": "Test Patient"
+      }
     }
-  },
+  ],
   "recommendations": [
     "Dietary modification",
     "Regular exercise",
     "Repeat testing in 3 months",
     "Follow-up in 2 weeks if symptoms persist"
   ],
-  "last_updated": "2026-07-06"
+  "last_updated": "2026-07-07"
 }
