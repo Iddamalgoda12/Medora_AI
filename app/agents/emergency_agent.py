@@ -1,13 +1,22 @@
 from app.graphs.state import State
 from app.llms.gemini import ask_gemini_async
 
+# For emergency situations.
+def build_emergency_actions(emergency_number: str = "+94716840360") -> str:
+    """Return quick-action links for calling or messaging emergency services."""
+    return (
+        "\n\n🚨 If this is life-threatening, act immediately:\n"
+        f"- Call emergency services: [Call {emergency_number}](tel:{emergency_number})\n"
+        f"- Send a quick message: [Message {emergency_number}](sms:{emergency_number}?body=Emergency%20help%20needed)"
+    )
+#Emergency
 
 async def emergency_agent(state: State):
     """
     Emergency agent handles critical health situations.
     """
     query = state["query"]
-    
+
     emergency_prompt = f"""
 You are a medical emergency response assistant.
 
@@ -25,6 +34,8 @@ Respond in a clear, structured, and calming manner.
 """
 
     response = await ask_gemini_async(emergency_prompt)
+    #Emergency Situation
+    response = f"{response}{build_emergency_actions()}"
 
     return {
         **state,
