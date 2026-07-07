@@ -2,7 +2,7 @@ from app.graphs.state import State
 from app.llms.gemini import ask_gemini_async
 
 # For emergency situations.
-def build_emergency_actions(emergency_number: str = "112") -> str:
+def build_emergency_actions(emergency_number: str = "+94716840360") -> str:
     """Return quick-action links for calling or messaging emergency services."""
     return (
         "\n\n🚨 If this is life-threatening, act immediately:\n"
