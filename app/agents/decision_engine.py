@@ -224,17 +224,11 @@ Return only the scores.
     # ----------------------------------
 
     if scores["emergency_agent"] >= 8:
-
-        pending_tasks = [
-            "emergency_agent",
-            "appointment_agent"
-        ]
-
         return {
             **state,
 
             "pending_tasks":
-                pending_tasks[1:],
+                [],
 
             "next_task":
                 "emergency_agent",

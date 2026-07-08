@@ -21,3 +21,6 @@ AI_MODELS/
 # Qdrant
 qdrant/storage/
 qdrant/snapshots/
+
+.env
+qdrant/

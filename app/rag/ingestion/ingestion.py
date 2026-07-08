@@ -1,8 +1,6 @@
 from pathlib import Path
 from uuid import uuid4
-
 from qdrant_client.models import PointStruct
-
 from app.rag.ingestion.loader import load_document
 from app.rag.ingestion.chunker import chunk_documents
 from app.rag.ingestion.embeddings import embed_texts

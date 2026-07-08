@@ -35,6 +35,11 @@ class State(TypedDict):
     pharmacy_recommendation: str
     appointment_recommendation: str
     patient_analysis: str
+    emergency_assessment: str
+    emergency_call_prototype: Dict[str, Any]
+    emergency_steps: List[str]
+    emergency_confirmation_pending: bool
+    emergency_pending_call: Dict[str, Any]
 
     iteration_count: int
     final_answer: str

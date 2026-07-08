@@ -1,5 +1,4 @@
 from pathlib import Path
-
 from sentence_transformers import CrossEncoder
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent

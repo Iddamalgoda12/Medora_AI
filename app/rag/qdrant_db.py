@@ -1,6 +1,5 @@
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
-
 from app.config.settings import settings
 
 QDRANT_HOST = settings.QDRANT_URL or "localhost"

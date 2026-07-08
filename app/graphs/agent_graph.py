@@ -112,10 +112,3 @@ def build_graph():
     builder.add_edge("remember_exchange", END)
 
     return builder.compile()
-
-
-def build_rag_graph():
-    """Expose the PDF RAG subgraph for standalone use."""
-    from app.graphs.rag_graph import build_rag_graph as _build_rag_graph
-
-    return _build_rag_graph()

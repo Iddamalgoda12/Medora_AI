@@ -1,10 +1,8 @@
 from typing import List
-
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 from pydantic import Field
-
 from app.rag.retrieval.retrieval import retrieve
 from app.rag.retrieval.reranker import rerank
 
