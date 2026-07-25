@@ -1,7 +1,7 @@
 import json
 from app.graphs.state import State
 from app.tools.pharmacy_search import find_multi_medicine_stock, geocode_address
-from app.llms.gemini import ask_gemini_async
+from app.llms.llm import ask_llm_async
 from app.agents.response_utils import append_agent_response
 
 
@@ -32,7 +32,7 @@ async def pharmacy_agent(state: State):
         f"Format your response as JSON: {{\"medicines\": [...], \"location\": \"...\"}}\n\n"
         f"Text: {query}"
     )
-    response = await ask_gemini_async(extraction_prompt)
+    response = await ask_llm_async(extraction_prompt)
 
     try:
         clean_content = response.strip()

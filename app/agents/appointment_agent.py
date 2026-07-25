@@ -1,7 +1,7 @@
 import json
 
 from app.graphs.state import State
-from app.llms.gemini import ask_gemini_async
+from app.llms.llm import ask_llm_async
 from app.tools.doctor_search import search_doctors
 from app.agents.response_utils import append_agent_response
 
@@ -26,7 +26,7 @@ Query:
 {query}
 """
 
-    response = await ask_gemini_async(prompt)
+    response = await ask_llm_async(prompt)
 
     try:
 

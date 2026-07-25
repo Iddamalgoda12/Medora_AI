@@ -4,7 +4,9 @@
     "Stable angina",
     "Hypertension",
     "Type 2 diabetes mellitus",
-    "Hyperlipidemia"
+    "Hyperlipidemia",
+    "Viral upper respiratory tract infection",
+    "Post-viral cough"
   ],
   "medicines": [
     "Aspirin 81 mg orally once daily",
@@ -17,20 +19,20 @@
   "allergies": [
     "No known drug allergies"
   ],
-  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The newly uploaded 'Medical Discharge Summary' is for Patient Name: John Perera, Age: 58 years, Sex: Male, Hospital Number: MRN-2026-104582. This conflicts significantly with the primary profile's original patient ID (CLN-2026-001, age 45, sex Male). The clinical context (chest pain, stable angina, hypertension, type 2 diabetes, hyperlipidemia) is entirely distinct from the previous profile's context (viral URI, post-viral cough, borderline labs). The profile has been updated based on the new report, assuming it represents the current patient's status, but this conflict requires urgent clarification. (Previous note: Demographic details in a prior Laboratory Investigation Report (LAB-2026-014, age 62, sex Female) also conflicted with the primary profile.) This update reflects a recent hospitalization (12-15 June 2026) for intermittent central chest discomfort, diagnosed as stable angina, hypertension, type 2 diabetes mellitus, and hyperlipidemia. Investigations included normal cardiac troponins, elevated fasting glucose (162 mg/dL), HbA1c (7.8%), and elevated LDL cholesterol (148 mg/dL). Patient discharged on Aspirin, Atorvastatin, Metformin, Amlodipine, Losartan, and sublingual Glyceryl trinitrate, with emphasis on lifestyle modification, medication compliance, and home monitoring. Specific follow-ups with cardiology and PCP are recommended.",
+  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The patient ID CLN-2026-001 has highly conflicting demographic and clinical data across multiple reports.\nThis profile has been updated by processing the 'Medical Discharge Summary.pdf' (for Patient Name: John Perera, Age: 58 years, Sex: Male, Hospital Number: MRN-2026-104582, hospitalization 12-15 June 2026), which details stable angina, hypertension, type 2 diabetes mellitus, and hyperlipidemia.\nHowever, the profile's patient demographics (age 45, sex Male) and current clinical context (viral upper respiratory tract infection with post-viral cough, vitals: BP 128/82, HR 78, Temp 37.2, SpO2 97%) still reflect data from a *subsequent* 'Clinical Consultation Report' (sample_clinical_report_01.pdf) for CLN-2026-001 (Age: 45, Sex: Male). This age (45) aligns with the primary profile's *original* patient ID (CLN-2026-001, age 45, sex Male), but directly contradicts the 'John Perera, age 58' data from this discharge summary.\nThe retention of 'John Perera' and hospital number 'MRN-2026-104582' (from the age 58 patient) alongside the age 45 and viral URI context (from the age 45 patient) exacerbates the demographic and clinical inconsistency, strongly suggesting data for two distinct patients has been merged under CLN-2026-001. Urgent clarification is required regarding the true identity and medical history associated with CLN-2026-001.\n(Previous note: Demographic details in a prior Laboratory Investigation Report (LAB-2026-014, age 62, sex Female) also conflicted with the primary profile.)",
   "vitals": {
-    "temperature_c": 36.8,
-    "blood_pressure_mmhg": "158/96",
-    "heart_rate_bpm": 94,
-    "spo2_percent": 98,
+    "temperature_c": 37.2,
+    "blood_pressure_mmhg": "128/82",
+    "heart_rate_bpm": 78,
+    "spo2_percent": 97,
     "respiratory_rate_bpm": 18
   },
-  "chief_complaint": "Intermittent central chest discomfort lasting approximately two hours, described as pressure-like, radiating to the left shoulder, and associated with mild shortness of breath and sweating.",
-  "history_of_present_illness": "Chest discomfort began while climbing stairs and improved partially with rest. Denied fever, cough, abdominal pain, or recent trauma. Medication adherence was inconsistent during the previous month.",
+  "chief_complaint": "Persistent cough and mild shortness of breath for 2 weeks.",
+  "history_of_present_illness": "Patient reports a dry cough worsening at night. No chest pain. Occasional fatigue.",
   "patient_demographics": {
     "patient_id": "CLN-2026-001",
     "name": "John Perera",
-    "age": 58,
+    "age": 45,
     "sex": "Male",
     "hospital_number": "MRN-2026-104582"
   },
@@ -68,7 +70,8 @@
     "Home blood glucose monitoring",
     "Low-sodium, heart-healthy diet",
     "Regular moderate exercise",
-    "Seek immediate medical attention if chest pain becomes severe, persistent, occurs at rest, or is accompanied by shortness of breath, dizziness, or loss of consciousness"
+    "Seek immediate medical attention if chest pain becomes severe, persistent, occurs at rest, or is accompanied by shortness of breath, dizziness, or loss of consciousness",
+    "Follow-up in 2 weeks if symptoms persist"
   ],
   "past_medical_history": [
     "Hypertension (10 years)",
@@ -77,5 +80,7 @@
     "No known chronic kidney disease",
     "No previous myocardial infarction"
   ],
-  "last_updated": "2026-07-06"
+  "assessment": "Likely viral upper respiratory tract infection with post-viral cough.",
+  "plan": "Hydration, symptomatic treatment, follow-up in 2 weeks if symptoms persist.",
+  "last_updated": "2026-07-07"
 }

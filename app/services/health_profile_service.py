@@ -9,7 +9,7 @@ import json
 import logging
 import re
 from pathlib import Path
-from app.llms.gemini import ask_gemini
+from app.llms.llm import ask_llm
 
 logger = logging.getLogger(__name__)
 
@@ -145,7 +145,7 @@ health profile based on a newly uploaded medical report.
 5. Return ONLY a single valid JSON object – no markdown, no explanation.
 """
 
-    raw_response = ask_gemini(prompt)
+    raw_response = ask_llm(prompt)
     clean_json = _extract_json_block(raw_response)
 
     updated_profile: dict = json.loads(clean_json)

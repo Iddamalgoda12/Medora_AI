@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 
 from app.graphs.state import State
-from app.llms.gemini import ask_gemini_async
+from app.llms.llm import ask_llm_async
 
 
 class EmergencyDecision(BaseModel):
@@ -143,7 +143,7 @@ User Query:
 {query}
 """
 
-    raw_response = await ask_gemini_async(emergency_prompt)
+    raw_response = await ask_llm_async(emergency_prompt)
 
     try:
         cleaned = raw_response.strip()

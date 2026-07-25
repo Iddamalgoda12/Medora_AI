@@ -1,5 +1,5 @@
 from app.graphs.state import State
-from app.llms.gemini import ask_gemini_async
+from app.llms.llm import ask_llm_async
 from app.rag.retrieval.generator import generate_context
 
 
@@ -45,7 +45,7 @@ User Query:
 Be clear, empathetic, and non-alarming while being accurate.
 """
 
-    response = await ask_gemini_async(report_prompt)
+    response = await ask_llm_async(report_prompt)
 
     return {
         **state,

@@ -1,5 +1,5 @@
 from app.graphs.state import State
-from app.llms.gemini import ask_gemini_async
+from app.llms.llm import ask_llm_async
 from app.memory.conversation import last_exchange_context
 
 
@@ -32,7 +32,7 @@ Use the previous exchange only when relevant to the current query.
 Be informative but remind them this is not a substitute for professional medical advice.
 """
 
-    response = await ask_gemini_async(answer_prompt)
+    response = await ask_llm_async(answer_prompt)
 
     return {
         **state,
