@@ -3,8 +3,8 @@ import logging
 from app.graphs.agent_graph import build_graph
 
 logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+    level=logging.DEBUG,
+    format="%(name)s | %(message)s",
 )
 logger = logging.getLogger(__name__)
 

@@ -27,7 +27,7 @@ _DEFAULT_PROFILE: dict = {
     "medicines": [],
     "allergies": [],
     "last_updated": "Never",
-    "notes": "",
+    "notes": "",    
 }
 
 
@@ -53,7 +53,7 @@ def load_health_profile() -> dict:
 
 
 def save_health_profile(profile: dict) -> None:
-    """Persist *profile* to disk atomically.
+    """updates health profile.json file
 
     Args:
         profile: The updated health-profile dictionary.
@@ -90,6 +90,7 @@ def save_health_profile(profile: dict) -> None:
 
 def _extract_json_block(text: str) -> str:
     """Strip markdown fences and leading/trailing whitespace from LLM output."""
+    """ llm output eke hriyata awshya kella ganimata"""
     # Try ```json ... ``` first, then bare ```...```
     match = re.search(r"```(?:json)?\s*([\s\S]+?)```", text)
     if match:
@@ -121,29 +122,29 @@ async def update_profile_from_report(report_text: str) -> dict:
     today = date.today().isoformat()
 
     prompt = f"""You are a medical AI assistant. Your job is to update a patient's
-health profile based on a newly uploaded medical report.
+    health profile based on a newly uploaded medical report.
 
-## Existing Health Profile (JSON)
-{json.dumps(existing_profile, indent=2)}
+    ## Existing Health Profile (JSON)
+    {json.dumps(existing_profile, indent=2)}
 
-## Newly Uploaded Medical Report Text
-{report_text}
+    ## Newly Uploaded Medical Report Text
+    {report_text}
 
-## Instructions
-1. Carefully read the report and extract all medically relevant information.
-2. Merge it with the existing profile.  Never remove previously recorded data
-   unless the report explicitly contradicts it.
-3. Populate / extend the following fields:
-   - - "status": Set the patient's overall status as one of: "🟢 Stable", "🟡 Monitor", or "🔴 Critical", based only on the medical evidence in the reports.
-   - "conditions"   : list of diagnosed conditions or diseases (strings)
-   - "medicines"    : list of prescribed or mentioned medications (strings)
-   - "allergies"    : list of recorded allergies (strings)
-   - "notes"        : any other clinically relevant observations (string)
-   - You may add additional top-level keys if they capture important data
-     (e.g. "lab_results", "vitals").
-4. Do NOT include a "last_updated" field – it is set by the system automatically.
-5. Return ONLY a single valid JSON object – no markdown, no explanation.
-"""
+    ## Instructions
+    1. Carefully read the report and extract all medically relevant information.
+    2. Merge it with the existing profile.  Never remove previously recorded data
+    unless the report explicitly contradicts it.
+    3. Populate / extend the following fields:
+    - - "status": Set the patient's overall status as one of: "🟢 Stable", "🟡 Monitor", or "🔴 Critical", based only on the medical evidence in the reports.
+    - "conditions"   : list of diagnosed conditions or diseases (strings)
+    - "medicines"    : list of prescribed or mentioned medications (strings)
+    - "allergies"    : list of recorded allergies (strings)
+    - "notes"        : any other clinically relevant observations (string)
+    - You may add additional top-level keys if they capture important data
+        (e.g. "lab_results", "vitals").
+    4. Do NOT include a "last_updated" field – it is set by the system automatically.
+    5. Return ONLY a single valid JSON object – no markdown, no explanation.
+    """
 
     raw_response = ask_llm(prompt)
     clean_json = _extract_json_block(raw_response)
@@ -166,8 +167,8 @@ health profile based on a newly uploaded medical report.
 # ---------------------------------------------------------------------------
 
 def format_profile_for_sidebar(profile: dict) -> str:
-    """Render *profile* as a Markdown string suitable for the Chainlit sidebar."""
-    status = profile.get("status", "🟢 Stable")
+    """json file eka chainlit ui eke sidebar eke display karanna markdown format ekata convert karana function ekak"""
+    status = profile.get("status", "⚪ Need more info")
     conditions = profile.get("conditions") or []
     medicines = profile.get("medicines") or []
     allergies = profile.get("allergies") or []
@@ -181,17 +182,17 @@ def format_profile_for_sidebar(profile: dict) -> str:
 
     markdown = f"""# 🩺 Your Health Profile
 
-**Status:** {status}
+    **Status:** {status}
 
-## Conditions
-{_bullet_list(conditions)}
+    ## Conditions
+    {_bullet_list(conditions)}
 
-## Medicines
-{_bullet_list(medicines)}
+    ## Medicines
+    {_bullet_list(medicines)}
 
-## Allergies
-{_bullet_list(allergies)}
-"""
+    ## Allergies
+    {_bullet_list(allergies)}
+    """
 
     if notes:
         markdown += f"\n## Notes\n{notes}\n"

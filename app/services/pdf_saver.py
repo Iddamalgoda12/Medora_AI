@@ -1,6 +1,5 @@
 """
-Single-responsibility-accept raw Chainlit attachment objects and
-persist them to the canonical PDF store directory.
+2 functions. Saves uploaded PDfs to pc.
 """
 
 from __future__ import annotations
@@ -22,18 +21,8 @@ def ensure_pdf_dir() -> None:
 
 def save_uploaded_pdf(file_name: str, source_path: str) -> Path:
     """Copy a Chainlit-uploaded PDF from its temp location to ``PDF_DIR``.
+    takes filename and its path and saves it to the pdfs folder."""
 
-    Args:
-        file_name:   Original filename supplied by the user (e.g. ``report.pdf``).
-        source_path: Absolute path to the temp file created by Chainlit.
-
-    Returns:
-        The final :class:`~pathlib.Path` of the saved PDF inside ``PDF_DIR``.
-
-    Raises:
-        ValueError: If the uploaded file is not a PDF.
-        FileNotFoundError: If the source temp file does not exist.
-    """
     ensure_pdf_dir()
 
     source = Path(source_path)
@@ -48,24 +37,29 @@ def save_uploaded_pdf(file_name: str, source_path: str) -> Path:
         )
 
     destination = PDF_DIR / file_name
-    shutil.copy2(source, destination)
+    if destination.exists():
+        raise FileExistsError(f"PDF already uploaded: {file_name}")
+
+    shutil.copy2(source, destination)                   #Actual copying happens here.
 
     logger.info("Saved uploaded PDF → %s", destination)
     return destination
 
 
-def save_uploaded_pdfs(elements: list) -> list[Path]:
-    """Persist multiple Chainlit attachment objects to the PDF directory.
+def save_uploaded_pdfs(elements: list) -> tuple[list[Path], list[str]]:
+    """Save uploaded PDf files to data folder and return their paths.
 
     Args:
         elements: List of Chainlit ``Element`` objects.  Each must expose
                   ``.name`` (original filename) and ``.path`` (temp file path).
 
     Returns:
-        List of :class:`~pathlib.Path` objects for all successfully saved PDFs.
-        Files that fail are logged and skipped rather than raising.
+        A tuple of:
+        - List of :class:`~pathlib.Path` objects for all successfully saved PDFs.
+        - List of filenames that were already uploaded and therefore skipped.
     """
     saved: list[Path] = []
+    skipped: list[str] = []
     for element in elements:
         try:
             path = save_uploaded_pdf(
@@ -73,6 +67,9 @@ def save_uploaded_pdfs(elements: list) -> list[Path]:
                 source_path=element.path,
             )
             saved.append(path)
+        except FileExistsError:
+            skipped.append(element.name)
+            logger.info("Skipped already uploaded PDF: %s", element.name)
         except Exception as exc:
             logger.error("Failed to save %s: %s", element.name, exc)
-    return saved
+    return saved, skipped
