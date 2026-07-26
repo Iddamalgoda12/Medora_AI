@@ -1,4 +1,3 @@
-import asyncio
 import logging
 from app.graphs.agent_graph import build_graph
 
@@ -113,66 +112,3 @@ def log_agent_run(state):
     if response:
         preview = response.strip().replace("\n", " ")
         logger.info("Response preview: %s", preview[:200])
-
-
-async def main():
-
-    print("🏥 MedoraAI - Intelligent Medical Assistant")
-    print("=" * 50)
-    print("Type 'exit' to quit")
-    print("=" * 50)
-
-    state = create_initial_state()
-
-    iteration = 0
-
-    while True:
-        iteration += 1
-
-        user_input = input("\n📝 You: ").strip()
-
-        if user_input.lower() == "exit":
-            print("\n👋 Thank you for using MedoraAI. Stay healthy!")
-            break
-
-        try:
-            print("\n⏳ Processing your request...")
-            print("-" * 50)
-
-            state = await run_agent(
-                state,
-                user_input,
-                iteration,
-            )
-
-            # Display execution trace
-            if state.get("execution_trace"):
-                print(f"\n📋 Execution Trace: {' → '.join(state['execution_trace'])}")
-
-            # Display decision scores if available
-            if state.get("decision_scores"):
-                print(f"\n📊 Decision Scores: {state['decision_scores']}")
-
-            # Display response
-            print("\n🤖 MedoraAI:")
-            print("-" * 50)
-
-            response = state.get("response") or state.get("final_response", "")
-
-            if response:
-                print(response)
-            else:
-                print("(No response generated)")
-
-            print("-" * 50)
-
-        except Exception as e:
-            print("\n❌ ERROR:")
-            print(f"   {str(e)}")
-
-            import traceback
-            traceback.print_exc()
-
-
-if __name__ == "__main__":
-    asyncio.run(main())

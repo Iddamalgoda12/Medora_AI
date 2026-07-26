@@ -6,14 +6,14 @@ from app.rag.qdrant_db import COLLECTION_NAME, client
 logger = logging.getLogger(__name__)
 
 
-def retrieve(query: str, limit: int = 50):
+def retrieve(query: str, limit: int = 10):
     if not query.strip():
         return []
 
     try:
         query_vector = embed_texts([query])[0]
 
-        results = client.query_points(
+        results = client.query_points(         #takes output as text ,not vectors.
             collection_name=COLLECTION_NAME,
             query=query_vector.tolist(),
             limit=limit,

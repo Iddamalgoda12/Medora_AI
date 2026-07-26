@@ -3,7 +3,7 @@ from langchain_core.documents import Document
 
 def chunk_documents(documents):
     chunk_size = 50
-    chunk_overlap = 15
+    chunk_overlap = 10
     chunks = []
 
     for document in documents:
