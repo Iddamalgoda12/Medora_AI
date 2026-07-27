@@ -1,0 +1,452 @@
+[
+  {
+    "hospital_id": "H001",
+    "name": "Asiri Central Hospital",
+    "city": "Colombo",
+    "address": "100 Main Road, Colombo",
+    "phone": "+94 11 4500000",
+    "latitude": 6.9271,
+    "longitude": 79.8612
+  },
+  {
+    "hospital_id": "H002",
+    "name": "Lanka Hospitals (Kandy)",
+    "city": "Kandy",
+    "address": "101 Main Road, Kandy",
+    "phone": "+94 11 4500001",
+    "latitude": 7.2936,
+    "longitude": 80.6367
+  },
+  {
+    "hospital_id": "H003",
+    "name": "Nawaloka Hospital (Galle)",
+    "city": "Galle",
+    "address": "102 Main Road, Galle",
+    "phone": "+94 11 4500002",
+    "latitude": 6.0595,
+    "longitude": 80.227
+  },
+  {
+    "hospital_id": "H004",
+    "name": "Hemas Hospital (Matara)",
+    "city": "Matara",
+    "address": "103 Main Road, Matara",
+    "phone": "+94 11 4500003",
+    "latitude": 5.9639,
+    "longitude": 80.564
+  },
+  {
+    "hospital_id": "H005",
+    "name": "Ninewells Hospital (Negombo)",
+    "city": "Negombo",
+    "address": "104 Main Road, Negombo",
+    "phone": "+94 11 4500004",
+    "latitude": 7.2203,
+    "longitude": 79.8478
+  },
+  {
+    "hospital_id": "H006",
+    "name": "Durdans Hospital (Kurunegala)",
+    "city": "Kurunegala",
+    "address": "105 Main Road, Kurunegala",
+    "phone": "+94 11 4500005",
+    "latitude": 7.4863,
+    "longitude": 80.3647
+  },
+  {
+    "hospital_id": "H007",
+    "name": "Oasis Hospital (Anuradhapura)",
+    "city": "Anuradhapura",
+    "address": "106 Main Road, Anuradhapura",
+    "phone": "+94 11 4500006",
+    "latitude": 8.3144,
+    "longitude": 80.4067
+  },
+  {
+    "hospital_id": "H008",
+    "name": "Kings Hospital (Jaffna)",
+    "city": "Jaffna",
+    "address": "107 Main Road, Jaffna",
+    "phone": "+94 11 4500007",
+    "latitude": 9.6675,
+    "longitude": 80.0315
+  },
+  {
+    "hospital_id": "H009",
+    "name": "Joseph Fraser Memorial Hospital (Batticaloa)",
+    "city": "Batticaloa",
+    "address": "108 Main Road, Batticaloa",
+    "phone": "+94 11 4500008",
+    "latitude": 7.7192,
+    "longitude": 81.7014
+  },
+  {
+    "hospital_id": "H010",
+    "name": "Medihelp Hospital (Trincomalee)",
+    "city": "Trincomalee",
+    "address": "109 Main Road, Trincomalee",
+    "phone": "+94 11 4500009",
+    "latitude": 8.5994,
+    "longitude": 81.2272
+  },
+  {
+    "hospital_id": "H011",
+    "name": "Teaching Hospital - Ratnapura",
+    "city": "Ratnapura",
+    "address": "110 Main Road, Ratnapura",
+    "phone": "+94 11 4500010",
+    "latitude": 6.6828,
+    "longitude": 80.3992
+  },
+  {
+    "hospital_id": "H012",
+    "name": "General Hospital - Badulla",
+    "city": "Badulla",
+    "address": "111 Main Road, Badulla",
+    "phone": "+94 11 4500011",
+    "latitude": 6.9925,
+    "longitude": 81.058
+  },
+  {
+    "hospital_id": "H013",
+    "name": "District General Hospital - Kalutara",
+    "city": "Kalutara",
+    "address": "112 Main Road, Kalutara",
+    "phone": "+94 11 4500012",
+    "latitude": 6.5914,
+    "longitude": 79.9667
+  },
+  {
+    "hospital_id": "H014",
+    "name": "Base Hospital - Matale",
+    "city": "Matale",
+    "address": "113 Main Road, Matale",
+    "phone": "+94 11 4500013",
+    "latitude": 7.4765,
+    "longitude": 80.6324
+  },
+  {
+    "hospital_id": "H015",
+    "name": "Provincial Hospital - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "114 Main Road, Polonnaruwa",
+    "phone": "+94 11 4500014",
+    "latitude": 7.9523,
+    "longitude": 81.0308
+  },
+  {
+    "hospital_id": "H016",
+    "name": "Central Care Hospital - Chilaw",
+    "city": "Chilaw",
+    "address": "115 Main Road, Chilaw",
+    "phone": "+94 11 4500015",
+    "latitude": 7.5758,
+    "longitude": 79.7953
+  },
+  {
+    "hospital_id": "H017",
+    "name": "LifeCare Hospital - Hambantota",
+    "city": "Hambantota",
+    "address": "116 Main Road, Hambantota",
+    "phone": "+94 11 4500016",
+    "latitude": 6.1271,
+    "longitude": 81.1215
+  },
+  {
+    "hospital_id": "H018",
+    "name": "Sunrise Hospital - Ampara",
+    "city": "Ampara",
+    "address": "117 Main Road, Ampara",
+    "phone": "+94 11 4500017",
+    "latitude": 7.2977,
+    "longitude": 81.6797
+  },
+  {
+    "hospital_id": "H019",
+    "name": "Family Care Hospital - Vavuniya",
+    "city": "Vavuniya",
+    "address": "118 Main Road, Vavuniya",
+    "phone": "+94 11 4500018",
+    "latitude": 8.7604,
+    "longitude": 80.5061
+  },
+  {
+    "hospital_id": "H020",
+    "name": "Metro Hospital - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "119 Main Road, Kilinochchi",
+    "phone": "+94 11 4500019",
+    "latitude": 9.4081,
+    "longitude": 80.4102
+  },
+  {
+    "hospital_id": "H021",
+    "name": "Asiri Central Hospital",
+    "city": "Colombo",
+    "address": "120 Main Road, Colombo",
+    "phone": "+94 11 4500020",
+    "latitude": 6.9271,
+    "longitude": 79.8612
+  },
+  {
+    "hospital_id": "H022",
+    "name": "Lanka Hospitals (Kandy)",
+    "city": "Kandy",
+    "address": "121 Main Road, Kandy",
+    "phone": "+94 11 4500021",
+    "latitude": 7.2936,
+    "longitude": 80.6367
+  },
+  {
+    "hospital_id": "H023",
+    "name": "Nawaloka Hospital (Galle)",
+    "city": "Galle",
+    "address": "122 Main Road, Galle",
+    "phone": "+94 11 4500022",
+    "latitude": 6.0595,
+    "longitude": 80.227
+  },
+  {
+    "hospital_id": "H024",
+    "name": "Hemas Hospital (Matara)",
+    "city": "Matara",
+    "address": "123 Main Road, Matara",
+    "phone": "+94 11 4500023",
+    "latitude": 5.9639,
+    "longitude": 80.564
+  },
+  {
+    "hospital_id": "H025",
+    "name": "Ninewells Hospital (Negombo)",
+    "city": "Negombo",
+    "address": "124 Main Road, Negombo",
+    "phone": "+94 11 4500024",
+    "latitude": 7.2203,
+    "longitude": 79.8478
+  },
+  {
+    "hospital_id": "H026",
+    "name": "Durdans Hospital (Kurunegala)",
+    "city": "Kurunegala",
+    "address": "125 Main Road, Kurunegala",
+    "phone": "+94 11 4500025",
+    "latitude": 7.4863,
+    "longitude": 80.3647
+  },
+  {
+    "hospital_id": "H027",
+    "name": "Oasis Hospital (Anuradhapura)",
+    "city": "Anuradhapura",
+    "address": "126 Main Road, Anuradhapura",
+    "phone": "+94 11 4500026",
+    "latitude": 8.3144,
+    "longitude": 80.4067
+  },
+  {
+    "hospital_id": "H028",
+    "name": "Kings Hospital (Jaffna)",
+    "city": "Jaffna",
+    "address": "127 Main Road, Jaffna",
+    "phone": "+94 11 4500027",
+    "latitude": 9.6675,
+    "longitude": 80.0315
+  },
+  {
+    "hospital_id": "H029",
+    "name": "Joseph Fraser Memorial Hospital (Batticaloa)",
+    "city": "Batticaloa",
+    "address": "128 Main Road, Batticaloa",
+    "phone": "+94 11 4500028",
+    "latitude": 7.7192,
+    "longitude": 81.7014
+  },
+  {
+    "hospital_id": "H030",
+    "name": "Medihelp Hospital (Trincomalee)",
+    "city": "Trincomalee",
+    "address": "129 Main Road, Trincomalee",
+    "phone": "+94 11 4500029",
+    "latitude": 8.5994,
+    "longitude": 81.2272
+  },
+  {
+    "hospital_id": "H031",
+    "name": "Teaching Hospital - Ratnapura",
+    "city": "Ratnapura",
+    "address": "130 Main Road, Ratnapura",
+    "phone": "+94 11 4500030",
+    "latitude": 6.6828,
+    "longitude": 80.3992
+  },
+  {
+    "hospital_id": "H032",
+    "name": "General Hospital - Badulla",
+    "city": "Badulla",
+    "address": "131 Main Road, Badulla",
+    "phone": "+94 11 4500031",
+    "latitude": 6.9925,
+    "longitude": 81.058
+  },
+  {
+    "hospital_id": "H033",
+    "name": "District General Hospital - Kalutara",
+    "city": "Kalutara",
+    "address": "132 Main Road, Kalutara",
+    "phone": "+94 11 4500032",
+    "latitude": 6.5914,
+    "longitude": 79.9667
+  },
+  {
+    "hospital_id": "H034",
+    "name": "Base Hospital - Matale",
+    "city": "Matale",
+    "address": "133 Main Road, Matale",
+    "phone": "+94 11 4500033",
+    "latitude": 7.4765,
+    "longitude": 80.6324
+  },
+  {
+    "hospital_id": "H035",
+    "name": "Provincial Hospital - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "134 Main Road, Polonnaruwa",
+    "phone": "+94 11 4500034",
+    "latitude": 7.9523,
+    "longitude": 81.0308
+  },
+  {
+    "hospital_id": "H036",
+    "name": "Central Care Hospital - Chilaw",
+    "city": "Chilaw",
+    "address": "135 Main Road, Chilaw",
+    "phone": "+94 11 4500035",
+    "latitude": 7.5758,
+    "longitude": 79.7953
+  },
+  {
+    "hospital_id": "H037",
+    "name": "LifeCare Hospital - Hambantota",
+    "city": "Hambantota",
+    "address": "136 Main Road, Hambantota",
+    "phone": "+94 11 4500036",
+    "latitude": 6.1271,
+    "longitude": 81.1215
+  },
+  {
+    "hospital_id": "H038",
+    "name": "Sunrise Hospital - Ampara",
+    "city": "Ampara",
+    "address": "137 Main Road, Ampara",
+    "phone": "+94 11 4500037",
+    "latitude": 7.2977,
+    "longitude": 81.6797
+  },
+  {
+    "hospital_id": "H039",
+    "name": "Family Care Hospital - Vavuniya",
+    "city": "Vavuniya",
+    "address": "138 Main Road, Vavuniya",
+    "phone": "+94 11 4500038",
+    "latitude": 8.7604,
+    "longitude": 80.5061
+  },
+  {
+    "hospital_id": "H040",
+    "name": "Metro Hospital - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "139 Main Road, Kilinochchi",
+    "phone": "+94 11 4500039",
+    "latitude": 9.4081,
+    "longitude": 80.4102
+  },
+  {
+    "hospital_id": "H041",
+    "name": "Asiri Central Hospital",
+    "city": "Colombo",
+    "address": "140 Main Road, Colombo",
+    "phone": "+94 11 4500040",
+    "latitude": 6.9271,
+    "longitude": 79.8612
+  },
+  {
+    "hospital_id": "H042",
+    "name": "Lanka Hospitals (Kandy)",
+    "city": "Kandy",
+    "address": "141 Main Road, Kandy",
+    "phone": "+94 11 4500041",
+    "latitude": 7.2936,
+    "longitude": 80.6367
+  },
+  {
+    "hospital_id": "H043",
+    "name": "Nawaloka Hospital (Galle)",
+    "city": "Galle",
+    "address": "142 Main Road, Galle",
+    "phone": "+94 11 4500042",
+    "latitude": 6.0595,
+    "longitude": 80.227
+  },
+  {
+    "hospital_id": "H044",
+    "name": "Hemas Hospital (Matara)",
+    "city": "Matara",
+    "address": "143 Main Road, Matara",
+    "phone": "+94 11 4500043",
+    "latitude": 5.9639,
+    "longitude": 80.564
+  },
+  {
+    "hospital_id": "H045",
+    "name": "Ninewells Hospital (Negombo)",
+    "city": "Negombo",
+    "address": "144 Main Road, Negombo",
+    "phone": "+94 11 4500044",
+    "latitude": 7.2203,
+    "longitude": 79.8478
+  },
+  {
+    "hospital_id": "H046",
+    "name": "Durdans Hospital (Kurunegala)",
+    "city": "Kurunegala",
+    "address": "145 Main Road, Kurunegala",
+    "phone": "+94 11 4500045",
+    "latitude": 7.4863,
+    "longitude": 80.3647
+  },
+  {
+    "hospital_id": "H047",
+    "name": "Oasis Hospital (Anuradhapura)",
+    "city": "Anuradhapura",
+    "address": "146 Main Road, Anuradhapura",
+    "phone": "+94 11 4500046",
+    "latitude": 8.3144,
+    "longitude": 80.4067
+  },
+  {
+    "hospital_id": "H048",
+    "name": "Kings Hospital (Jaffna)",
+    "city": "Jaffna",
+    "address": "147 Main Road, Jaffna",
+    "phone": "+94 11 4500047",
+    "latitude": 9.6675,
+    "longitude": 80.0315
+  },
+  {
+    "hospital_id": "H049",
+    "name": "Joseph Fraser Memorial Hospital (Batticaloa)",
+    "city": "Batticaloa",
+    "address": "148 Main Road, Batticaloa",
+    "phone": "+94 11 4500048",
+    "latitude": 7.7192,
+    "longitude": 81.7014
+  },
+  {
+    "hospital_id": "H050",
+    "name": "Medihelp Hospital (Trincomalee)",
+    "city": "Trincomalee",
+    "address": "149 Main Road, Trincomalee",
+    "phone": "+94 11 4500049",
+    "latitude": 8.5994,
+    "longitude": 81.2272
+  }
+]

@@ -1,0 +1,28 @@
+Doctor
+
+doctor_id
+hospital_id
+
+        │
+
+        ▼
+
+Hospital
+
+hospital_id
+
+----------------------------
+
+Schedule
+
+doctor_id
+
+----------------------------
+
+Booking
+
+doctor_id
+
+hospital_id
+
+slot_id

@@ -1,0 +1,1802 @@
+[
+  {
+    "pharmacy_id": "P001",
+    "name": "HealthGuard Pharmacy - Colombo",
+    "city": "Colombo",
+    "address": "200 Main Road, Colombo",
+    "phone": "+94 11 5800000",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.0,
+    "nearby_hospital_ids": [
+      "H001"
+    ],
+    "nearby_channeling_center_ids": [
+      "C001"
+    ]
+  },
+  {
+    "pharmacy_id": "P002",
+    "name": "CarePlus Pharmacy - Kandy",
+    "city": "Kandy",
+    "address": "201 Main Road, Kandy",
+    "phone": "+94 11 5800001",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.7,
+    "nearby_hospital_ids": [
+      "H002"
+    ],
+    "nearby_channeling_center_ids": [
+      "C002"
+    ]
+  },
+  {
+    "pharmacy_id": "P003",
+    "name": "MediTrust Pharmacy - Galle",
+    "city": "Galle",
+    "address": "202 Main Road, Galle",
+    "phone": "+94 11 5800002",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.4,
+    "nearby_hospital_ids": [
+      "H003"
+    ],
+    "nearby_channeling_center_ids": [
+      "C003"
+    ]
+  },
+  {
+    "pharmacy_id": "P004",
+    "name": "City Pharmacy Pharmacy - Negombo",
+    "city": "Negombo",
+    "address": "203 Main Road, Negombo",
+    "phone": "+94 11 5800003",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.1,
+    "nearby_hospital_ids": [
+      "H004"
+    ],
+    "nearby_channeling_center_ids": [
+      "C004"
+    ]
+  },
+  {
+    "pharmacy_id": "P005",
+    "name": "WellLife Pharmacy - Kurunegala",
+    "city": "Kurunegala",
+    "address": "204 Main Road, Kurunegala",
+    "phone": "+94 11 5800004",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.8,
+    "nearby_hospital_ids": [
+      "H005"
+    ],
+    "nearby_channeling_center_ids": [
+      "C005"
+    ]
+  },
+  {
+    "pharmacy_id": "P006",
+    "name": "PharmaCare Pharmacy - Matara",
+    "city": "Matara",
+    "address": "205 Main Road, Matara",
+    "phone": "+94 11 5800005",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.4,
+    "nearby_hospital_ids": [
+      "H006"
+    ],
+    "nearby_channeling_center_ids": [
+      "C006"
+    ]
+  },
+  {
+    "pharmacy_id": "P007",
+    "name": "Green Cross Pharmacy - Jaffna",
+    "city": "Jaffna",
+    "address": "206 Main Road, Jaffna",
+    "phone": "+94 11 5800006",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.1,
+    "nearby_hospital_ids": [
+      "H007"
+    ],
+    "nearby_channeling_center_ids": [
+      "C007"
+    ]
+  },
+  {
+    "pharmacy_id": "P008",
+    "name": "LifeMed Pharmacy - Batticaloa",
+    "city": "Batticaloa",
+    "address": "207 Main Road, Batticaloa",
+    "phone": "+94 11 5800007",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.8,
+    "nearby_hospital_ids": [
+      "H008"
+    ],
+    "nearby_channeling_center_ids": [
+      "C008"
+    ]
+  },
+  {
+    "pharmacy_id": "P009",
+    "name": "HealthGuard Pharmacy - Anuradhapura",
+    "city": "Anuradhapura",
+    "address": "208 Main Road, Anuradhapura",
+    "phone": "+94 11 5800008",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.5,
+    "nearby_hospital_ids": [
+      "H009"
+    ],
+    "nearby_channeling_center_ids": [
+      "C009"
+    ]
+  },
+  {
+    "pharmacy_id": "P010",
+    "name": "CarePlus Pharmacy - Badulla",
+    "city": "Badulla",
+    "address": "209 Main Road, Badulla",
+    "phone": "+94 11 5800009",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.1,
+    "nearby_hospital_ids": [
+      "H010"
+    ],
+    "nearby_channeling_center_ids": [
+      "C010"
+    ]
+  },
+  {
+    "pharmacy_id": "P011",
+    "name": "MediTrust Pharmacy - Ratnapura",
+    "city": "Ratnapura",
+    "address": "210 Main Road, Ratnapura",
+    "phone": "+94 11 5800010",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.8,
+    "nearby_hospital_ids": [
+      "H011"
+    ],
+    "nearby_channeling_center_ids": [
+      "C011"
+    ]
+  },
+  {
+    "pharmacy_id": "P012",
+    "name": "City Pharmacy Pharmacy - Kalutara",
+    "city": "Kalutara",
+    "address": "211 Main Road, Kalutara",
+    "phone": "+94 11 5800011",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.5,
+    "nearby_hospital_ids": [
+      "H012"
+    ],
+    "nearby_channeling_center_ids": [
+      "C012"
+    ]
+  },
+  {
+    "pharmacy_id": "P013",
+    "name": "WellLife Pharmacy - Trincomalee",
+    "city": "Trincomalee",
+    "address": "212 Main Road, Trincomalee",
+    "phone": "+94 11 5800012",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.2,
+    "nearby_hospital_ids": [
+      "H013"
+    ],
+    "nearby_channeling_center_ids": [
+      "C013"
+    ]
+  },
+  {
+    "pharmacy_id": "P014",
+    "name": "PharmaCare Pharmacy - Matale",
+    "city": "Matale",
+    "address": "213 Main Road, Matale",
+    "phone": "+94 11 5800013",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.9,
+    "nearby_hospital_ids": [
+      "H014"
+    ],
+    "nearby_channeling_center_ids": [
+      "C014"
+    ]
+  },
+  {
+    "pharmacy_id": "P015",
+    "name": "Green Cross Pharmacy - Hambantota",
+    "city": "Hambantota",
+    "address": "214 Main Road, Hambantota",
+    "phone": "+94 11 5800014",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.5,
+    "nearby_hospital_ids": [
+      "H015"
+    ],
+    "nearby_channeling_center_ids": [
+      "C015"
+    ]
+  },
+  {
+    "pharmacy_id": "P016",
+    "name": "LifeMed Pharmacy - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "215 Main Road, Polonnaruwa",
+    "phone": "+94 11 5800015",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.2,
+    "nearby_hospital_ids": [
+      "H016"
+    ],
+    "nearby_channeling_center_ids": [
+      "C016"
+    ]
+  },
+  {
+    "pharmacy_id": "P017",
+    "name": "HealthGuard Pharmacy - Chilaw",
+    "city": "Chilaw",
+    "address": "216 Main Road, Chilaw",
+    "phone": "+94 11 5800016",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.9,
+    "nearby_hospital_ids": [
+      "H017"
+    ],
+    "nearby_channeling_center_ids": [
+      "C017"
+    ]
+  },
+  {
+    "pharmacy_id": "P018",
+    "name": "CarePlus Pharmacy - Ampara",
+    "city": "Ampara",
+    "address": "217 Main Road, Ampara",
+    "phone": "+94 11 5800017",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.6,
+    "nearby_hospital_ids": [
+      "H018"
+    ],
+    "nearby_channeling_center_ids": [
+      "C018"
+    ]
+  },
+  {
+    "pharmacy_id": "P019",
+    "name": "MediTrust Pharmacy - Vavuniya",
+    "city": "Vavuniya",
+    "address": "218 Main Road, Vavuniya",
+    "phone": "+94 11 5800018",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.2,
+    "nearby_hospital_ids": [
+      "H019"
+    ],
+    "nearby_channeling_center_ids": [
+      "C019"
+    ]
+  },
+  {
+    "pharmacy_id": "P020",
+    "name": "City Pharmacy Pharmacy - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "219 Main Road, Kilinochchi",
+    "phone": "+94 11 5800019",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.9,
+    "nearby_hospital_ids": [
+      "H020"
+    ],
+    "nearby_channeling_center_ids": [
+      "C020"
+    ]
+  },
+  {
+    "pharmacy_id": "P021",
+    "name": "WellLife Pharmacy - Colombo",
+    "city": "Colombo",
+    "address": "220 Main Road, Colombo",
+    "phone": "+94 11 5800020",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.6,
+    "nearby_hospital_ids": [
+      "H021"
+    ],
+    "nearby_channeling_center_ids": [
+      "C021"
+    ]
+  },
+  {
+    "pharmacy_id": "P022",
+    "name": "PharmaCare Pharmacy - Kandy",
+    "city": "Kandy",
+    "address": "221 Main Road, Kandy",
+    "phone": "+94 11 5800021",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.3,
+    "nearby_hospital_ids": [
+      "H022"
+    ],
+    "nearby_channeling_center_ids": [
+      "C022"
+    ]
+  },
+  {
+    "pharmacy_id": "P023",
+    "name": "Green Cross Pharmacy - Galle",
+    "city": "Galle",
+    "address": "222 Main Road, Galle",
+    "phone": "+94 11 5800022",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 5.0,
+    "nearby_hospital_ids": [
+      "H023"
+    ],
+    "nearby_channeling_center_ids": [
+      "C023"
+    ]
+  },
+  {
+    "pharmacy_id": "P024",
+    "name": "LifeMed Pharmacy - Negombo",
+    "city": "Negombo",
+    "address": "223 Main Road, Negombo",
+    "phone": "+94 11 5800023",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.6,
+    "nearby_hospital_ids": [
+      "H024"
+    ],
+    "nearby_channeling_center_ids": [
+      "C024"
+    ]
+  },
+  {
+    "pharmacy_id": "P025",
+    "name": "HealthGuard Pharmacy - Kurunegala",
+    "city": "Kurunegala",
+    "address": "224 Main Road, Kurunegala",
+    "phone": "+94 11 5800024",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.3,
+    "nearby_hospital_ids": [
+      "H025"
+    ],
+    "nearby_channeling_center_ids": [
+      "C025"
+    ]
+  },
+  {
+    "pharmacy_id": "P026",
+    "name": "CarePlus Pharmacy - Matara",
+    "city": "Matara",
+    "address": "225 Main Road, Matara",
+    "phone": "+94 11 5800025",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.0,
+    "nearby_hospital_ids": [
+      "H026"
+    ],
+    "nearby_channeling_center_ids": [
+      "C026"
+    ]
+  },
+  {
+    "pharmacy_id": "P027",
+    "name": "MediTrust Pharmacy - Jaffna",
+    "city": "Jaffna",
+    "address": "226 Main Road, Jaffna",
+    "phone": "+94 11 5800026",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.7,
+    "nearby_hospital_ids": [
+      "H027"
+    ],
+    "nearby_channeling_center_ids": [
+      "C027"
+    ]
+  },
+  {
+    "pharmacy_id": "P028",
+    "name": "City Pharmacy Pharmacy - Batticaloa",
+    "city": "Batticaloa",
+    "address": "227 Main Road, Batticaloa",
+    "phone": "+94 11 5800027",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.3,
+    "nearby_hospital_ids": [
+      "H028"
+    ],
+    "nearby_channeling_center_ids": [
+      "C028"
+    ]
+  },
+  {
+    "pharmacy_id": "P029",
+    "name": "WellLife Pharmacy - Anuradhapura",
+    "city": "Anuradhapura",
+    "address": "228 Main Road, Anuradhapura",
+    "phone": "+94 11 5800028",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.0,
+    "nearby_hospital_ids": [
+      "H029"
+    ],
+    "nearby_channeling_center_ids": [
+      "C029"
+    ]
+  },
+  {
+    "pharmacy_id": "P030",
+    "name": "PharmaCare Pharmacy - Badulla",
+    "city": "Badulla",
+    "address": "229 Main Road, Badulla",
+    "phone": "+94 11 5800029",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.7,
+    "nearby_hospital_ids": [
+      "H030"
+    ],
+    "nearby_channeling_center_ids": [
+      "C030"
+    ]
+  },
+  {
+    "pharmacy_id": "P031",
+    "name": "Green Cross Pharmacy - Ratnapura",
+    "city": "Ratnapura",
+    "address": "230 Main Road, Ratnapura",
+    "phone": "+94 11 5800030",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.4,
+    "nearby_hospital_ids": [
+      "H031"
+    ],
+    "nearby_channeling_center_ids": [
+      "C001"
+    ]
+  },
+  {
+    "pharmacy_id": "P032",
+    "name": "LifeMed Pharmacy - Kalutara",
+    "city": "Kalutara",
+    "address": "231 Main Road, Kalutara",
+    "phone": "+94 11 5800031",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.0,
+    "nearby_hospital_ids": [
+      "H032"
+    ],
+    "nearby_channeling_center_ids": [
+      "C002"
+    ]
+  },
+  {
+    "pharmacy_id": "P033",
+    "name": "HealthGuard Pharmacy - Trincomalee",
+    "city": "Trincomalee",
+    "address": "232 Main Road, Trincomalee",
+    "phone": "+94 11 5800032",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.7,
+    "nearby_hospital_ids": [
+      "H033"
+    ],
+    "nearby_channeling_center_ids": [
+      "C003"
+    ]
+  },
+  {
+    "pharmacy_id": "P034",
+    "name": "CarePlus Pharmacy - Matale",
+    "city": "Matale",
+    "address": "233 Main Road, Matale",
+    "phone": "+94 11 5800033",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.4,
+    "nearby_hospital_ids": [
+      "H034"
+    ],
+    "nearby_channeling_center_ids": [
+      "C004"
+    ]
+  },
+  {
+    "pharmacy_id": "P035",
+    "name": "MediTrust Pharmacy - Hambantota",
+    "city": "Hambantota",
+    "address": "234 Main Road, Hambantota",
+    "phone": "+94 11 5800034",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.1,
+    "nearby_hospital_ids": [
+      "H035"
+    ],
+    "nearby_channeling_center_ids": [
+      "C005"
+    ]
+  },
+  {
+    "pharmacy_id": "P036",
+    "name": "City Pharmacy Pharmacy - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "235 Main Road, Polonnaruwa",
+    "phone": "+94 11 5800035",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.8,
+    "nearby_hospital_ids": [
+      "H036"
+    ],
+    "nearby_channeling_center_ids": [
+      "C006"
+    ]
+  },
+  {
+    "pharmacy_id": "P037",
+    "name": "WellLife Pharmacy - Chilaw",
+    "city": "Chilaw",
+    "address": "236 Main Road, Chilaw",
+    "phone": "+94 11 5800036",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.4,
+    "nearby_hospital_ids": [
+      "H037"
+    ],
+    "nearby_channeling_center_ids": [
+      "C007"
+    ]
+  },
+  {
+    "pharmacy_id": "P038",
+    "name": "PharmaCare Pharmacy - Ampara",
+    "city": "Ampara",
+    "address": "237 Main Road, Ampara",
+    "phone": "+94 11 5800037",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.1,
+    "nearby_hospital_ids": [
+      "H038"
+    ],
+    "nearby_channeling_center_ids": [
+      "C008"
+    ]
+  },
+  {
+    "pharmacy_id": "P039",
+    "name": "Green Cross Pharmacy - Vavuniya",
+    "city": "Vavuniya",
+    "address": "238 Main Road, Vavuniya",
+    "phone": "+94 11 5800038",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.8,
+    "nearby_hospital_ids": [
+      "H039"
+    ],
+    "nearby_channeling_center_ids": [
+      "C009"
+    ]
+  },
+  {
+    "pharmacy_id": "P040",
+    "name": "LifeMed Pharmacy - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "239 Main Road, Kilinochchi",
+    "phone": "+94 11 5800039",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.5,
+    "nearby_hospital_ids": [
+      "H040"
+    ],
+    "nearby_channeling_center_ids": [
+      "C010"
+    ]
+  },
+  {
+    "pharmacy_id": "P041",
+    "name": "HealthGuard Pharmacy - Colombo",
+    "city": "Colombo",
+    "address": "240 Main Road, Colombo",
+    "phone": "+94 11 5800040",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.1,
+    "nearby_hospital_ids": [
+      "H041"
+    ],
+    "nearby_channeling_center_ids": [
+      "C011"
+    ]
+  },
+  {
+    "pharmacy_id": "P042",
+    "name": "CarePlus Pharmacy - Kandy",
+    "city": "Kandy",
+    "address": "241 Main Road, Kandy",
+    "phone": "+94 11 5800041",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.8,
+    "nearby_hospital_ids": [
+      "H042"
+    ],
+    "nearby_channeling_center_ids": [
+      "C012"
+    ]
+  },
+  {
+    "pharmacy_id": "P043",
+    "name": "MediTrust Pharmacy - Galle",
+    "city": "Galle",
+    "address": "242 Main Road, Galle",
+    "phone": "+94 11 5800042",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.5,
+    "nearby_hospital_ids": [
+      "H043"
+    ],
+    "nearby_channeling_center_ids": [
+      "C013"
+    ]
+  },
+  {
+    "pharmacy_id": "P044",
+    "name": "City Pharmacy Pharmacy - Negombo",
+    "city": "Negombo",
+    "address": "243 Main Road, Negombo",
+    "phone": "+94 11 5800043",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.2,
+    "nearby_hospital_ids": [
+      "H044"
+    ],
+    "nearby_channeling_center_ids": [
+      "C014"
+    ]
+  },
+  {
+    "pharmacy_id": "P045",
+    "name": "WellLife Pharmacy - Kurunegala",
+    "city": "Kurunegala",
+    "address": "244 Main Road, Kurunegala",
+    "phone": "+94 11 5800044",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.9,
+    "nearby_hospital_ids": [
+      "H045"
+    ],
+    "nearby_channeling_center_ids": [
+      "C015"
+    ]
+  },
+  {
+    "pharmacy_id": "P046",
+    "name": "PharmaCare Pharmacy - Matara",
+    "city": "Matara",
+    "address": "245 Main Road, Matara",
+    "phone": "+94 11 5800045",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.5,
+    "nearby_hospital_ids": [
+      "H046"
+    ],
+    "nearby_channeling_center_ids": [
+      "C016"
+    ]
+  },
+  {
+    "pharmacy_id": "P047",
+    "name": "Green Cross Pharmacy - Jaffna",
+    "city": "Jaffna",
+    "address": "246 Main Road, Jaffna",
+    "phone": "+94 11 5800046",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.2,
+    "nearby_hospital_ids": [
+      "H047"
+    ],
+    "nearby_channeling_center_ids": [
+      "C017"
+    ]
+  },
+  {
+    "pharmacy_id": "P048",
+    "name": "LifeMed Pharmacy - Batticaloa",
+    "city": "Batticaloa",
+    "address": "247 Main Road, Batticaloa",
+    "phone": "+94 11 5800047",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.9,
+    "nearby_hospital_ids": [
+      "H048"
+    ],
+    "nearby_channeling_center_ids": [
+      "C018"
+    ]
+  },
+  {
+    "pharmacy_id": "P049",
+    "name": "HealthGuard Pharmacy - Anuradhapura",
+    "city": "Anuradhapura",
+    "address": "248 Main Road, Anuradhapura",
+    "phone": "+94 11 5800048",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.6,
+    "nearby_hospital_ids": [
+      "H049"
+    ],
+    "nearby_channeling_center_ids": [
+      "C019"
+    ]
+  },
+  {
+    "pharmacy_id": "P050",
+    "name": "CarePlus Pharmacy - Badulla",
+    "city": "Badulla",
+    "address": "249 Main Road, Badulla",
+    "phone": "+94 11 5800049",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.2,
+    "nearby_hospital_ids": [
+      "H050"
+    ],
+    "nearby_channeling_center_ids": [
+      "C020"
+    ]
+  },
+  {
+    "pharmacy_id": "P051",
+    "name": "MediTrust Pharmacy - Ratnapura",
+    "city": "Ratnapura",
+    "address": "250 Main Road, Ratnapura",
+    "phone": "+94 11 5800050",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.9,
+    "nearby_hospital_ids": [
+      "H001"
+    ],
+    "nearby_channeling_center_ids": [
+      "C021"
+    ]
+  },
+  {
+    "pharmacy_id": "P052",
+    "name": "City Pharmacy Pharmacy - Kalutara",
+    "city": "Kalutara",
+    "address": "251 Main Road, Kalutara",
+    "phone": "+94 11 5800051",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.6,
+    "nearby_hospital_ids": [
+      "H002"
+    ],
+    "nearby_channeling_center_ids": [
+      "C022"
+    ]
+  },
+  {
+    "pharmacy_id": "P053",
+    "name": "WellLife Pharmacy - Trincomalee",
+    "city": "Trincomalee",
+    "address": "252 Main Road, Trincomalee",
+    "phone": "+94 11 5800052",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.3,
+    "nearby_hospital_ids": [
+      "H003"
+    ],
+    "nearby_channeling_center_ids": [
+      "C023"
+    ]
+  },
+  {
+    "pharmacy_id": "P054",
+    "name": "PharmaCare Pharmacy - Matale",
+    "city": "Matale",
+    "address": "253 Main Road, Matale",
+    "phone": "+94 11 5800053",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 5.0,
+    "nearby_hospital_ids": [
+      "H004"
+    ],
+    "nearby_channeling_center_ids": [
+      "C024"
+    ]
+  },
+  {
+    "pharmacy_id": "P055",
+    "name": "Green Cross Pharmacy - Hambantota",
+    "city": "Hambantota",
+    "address": "254 Main Road, Hambantota",
+    "phone": "+94 11 5800054",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.6,
+    "nearby_hospital_ids": [
+      "H005"
+    ],
+    "nearby_channeling_center_ids": [
+      "C025"
+    ]
+  },
+  {
+    "pharmacy_id": "P056",
+    "name": "LifeMed Pharmacy - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "255 Main Road, Polonnaruwa",
+    "phone": "+94 11 5800055",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.3,
+    "nearby_hospital_ids": [
+      "H006"
+    ],
+    "nearby_channeling_center_ids": [
+      "C026"
+    ]
+  },
+  {
+    "pharmacy_id": "P057",
+    "name": "HealthGuard Pharmacy - Chilaw",
+    "city": "Chilaw",
+    "address": "256 Main Road, Chilaw",
+    "phone": "+94 11 5800056",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.0,
+    "nearby_hospital_ids": [
+      "H007"
+    ],
+    "nearby_channeling_center_ids": [
+      "C027"
+    ]
+  },
+  {
+    "pharmacy_id": "P058",
+    "name": "CarePlus Pharmacy - Ampara",
+    "city": "Ampara",
+    "address": "257 Main Road, Ampara",
+    "phone": "+94 11 5800057",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.7,
+    "nearby_hospital_ids": [
+      "H008"
+    ],
+    "nearby_channeling_center_ids": [
+      "C028"
+    ]
+  },
+  {
+    "pharmacy_id": "P059",
+    "name": "MediTrust Pharmacy - Vavuniya",
+    "city": "Vavuniya",
+    "address": "258 Main Road, Vavuniya",
+    "phone": "+94 11 5800058",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.3,
+    "nearby_hospital_ids": [
+      "H009"
+    ],
+    "nearby_channeling_center_ids": [
+      "C029"
+    ]
+  },
+  {
+    "pharmacy_id": "P060",
+    "name": "City Pharmacy Pharmacy - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "259 Main Road, Kilinochchi",
+    "phone": "+94 11 5800059",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.0,
+    "nearby_hospital_ids": [
+      "H010"
+    ],
+    "nearby_channeling_center_ids": [
+      "C030"
+    ]
+  },
+  {
+    "pharmacy_id": "P061",
+    "name": "WellLife Pharmacy - Colombo",
+    "city": "Colombo",
+    "address": "260 Main Road, Colombo",
+    "phone": "+94 11 5800060",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.7,
+    "nearby_hospital_ids": [
+      "H011"
+    ],
+    "nearby_channeling_center_ids": [
+      "C001"
+    ]
+  },
+  {
+    "pharmacy_id": "P062",
+    "name": "PharmaCare Pharmacy - Kandy",
+    "city": "Kandy",
+    "address": "261 Main Road, Kandy",
+    "phone": "+94 11 5800061",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.4,
+    "nearby_hospital_ids": [
+      "H012"
+    ],
+    "nearby_channeling_center_ids": [
+      "C002"
+    ]
+  },
+  {
+    "pharmacy_id": "P063",
+    "name": "Green Cross Pharmacy - Galle",
+    "city": "Galle",
+    "address": "262 Main Road, Galle",
+    "phone": "+94 11 5800062",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.0,
+    "nearby_hospital_ids": [
+      "H013"
+    ],
+    "nearby_channeling_center_ids": [
+      "C003"
+    ]
+  },
+  {
+    "pharmacy_id": "P064",
+    "name": "LifeMed Pharmacy - Negombo",
+    "city": "Negombo",
+    "address": "263 Main Road, Negombo",
+    "phone": "+94 11 5800063",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.7,
+    "nearby_hospital_ids": [
+      "H014"
+    ],
+    "nearby_channeling_center_ids": [
+      "C004"
+    ]
+  },
+  {
+    "pharmacy_id": "P065",
+    "name": "HealthGuard Pharmacy - Kurunegala",
+    "city": "Kurunegala",
+    "address": "264 Main Road, Kurunegala",
+    "phone": "+94 11 5800064",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.4,
+    "nearby_hospital_ids": [
+      "H015"
+    ],
+    "nearby_channeling_center_ids": [
+      "C005"
+    ]
+  },
+  {
+    "pharmacy_id": "P066",
+    "name": "CarePlus Pharmacy - Matara",
+    "city": "Matara",
+    "address": "265 Main Road, Matara",
+    "phone": "+94 11 5800065",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.1,
+    "nearby_hospital_ids": [
+      "H016"
+    ],
+    "nearby_channeling_center_ids": [
+      "C006"
+    ]
+  },
+  {
+    "pharmacy_id": "P067",
+    "name": "MediTrust Pharmacy - Jaffna",
+    "city": "Jaffna",
+    "address": "266 Main Road, Jaffna",
+    "phone": "+94 11 5800066",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.8,
+    "nearby_hospital_ids": [
+      "H017"
+    ],
+    "nearby_channeling_center_ids": [
+      "C007"
+    ]
+  },
+  {
+    "pharmacy_id": "P068",
+    "name": "City Pharmacy Pharmacy - Batticaloa",
+    "city": "Batticaloa",
+    "address": "267 Main Road, Batticaloa",
+    "phone": "+94 11 5800067",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.4,
+    "nearby_hospital_ids": [
+      "H018"
+    ],
+    "nearby_channeling_center_ids": [
+      "C008"
+    ]
+  },
+  {
+    "pharmacy_id": "P069",
+    "name": "WellLife Pharmacy - Anuradhapura",
+    "city": "Anuradhapura",
+    "address": "268 Main Road, Anuradhapura",
+    "phone": "+94 11 5800068",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.1,
+    "nearby_hospital_ids": [
+      "H019"
+    ],
+    "nearby_channeling_center_ids": [
+      "C009"
+    ]
+  },
+  {
+    "pharmacy_id": "P070",
+    "name": "PharmaCare Pharmacy - Badulla",
+    "city": "Badulla",
+    "address": "269 Main Road, Badulla",
+    "phone": "+94 11 5800069",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.8,
+    "nearby_hospital_ids": [
+      "H020"
+    ],
+    "nearby_channeling_center_ids": [
+      "C010"
+    ]
+  },
+  {
+    "pharmacy_id": "P071",
+    "name": "Green Cross Pharmacy - Ratnapura",
+    "city": "Ratnapura",
+    "address": "270 Main Road, Ratnapura",
+    "phone": "+94 11 5800070",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.5,
+    "nearby_hospital_ids": [
+      "H021"
+    ],
+    "nearby_channeling_center_ids": [
+      "C011"
+    ]
+  },
+  {
+    "pharmacy_id": "P072",
+    "name": "LifeMed Pharmacy - Kalutara",
+    "city": "Kalutara",
+    "address": "271 Main Road, Kalutara",
+    "phone": "+94 11 5800071",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.1,
+    "nearby_hospital_ids": [
+      "H022"
+    ],
+    "nearby_channeling_center_ids": [
+      "C012"
+    ]
+  },
+  {
+    "pharmacy_id": "P073",
+    "name": "HealthGuard Pharmacy - Trincomalee",
+    "city": "Trincomalee",
+    "address": "272 Main Road, Trincomalee",
+    "phone": "+94 11 5800072",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.8,
+    "nearby_hospital_ids": [
+      "H023"
+    ],
+    "nearby_channeling_center_ids": [
+      "C013"
+    ]
+  },
+  {
+    "pharmacy_id": "P074",
+    "name": "CarePlus Pharmacy - Matale",
+    "city": "Matale",
+    "address": "273 Main Road, Matale",
+    "phone": "+94 11 5800073",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.5,
+    "nearby_hospital_ids": [
+      "H024"
+    ],
+    "nearby_channeling_center_ids": [
+      "C014"
+    ]
+  },
+  {
+    "pharmacy_id": "P075",
+    "name": "MediTrust Pharmacy - Hambantota",
+    "city": "Hambantota",
+    "address": "274 Main Road, Hambantota",
+    "phone": "+94 11 5800074",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.2,
+    "nearby_hospital_ids": [
+      "H025"
+    ],
+    "nearby_channeling_center_ids": [
+      "C015"
+    ]
+  },
+  {
+    "pharmacy_id": "P076",
+    "name": "City Pharmacy Pharmacy - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "275 Main Road, Polonnaruwa",
+    "phone": "+94 11 5800075",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.9,
+    "nearby_hospital_ids": [
+      "H026"
+    ],
+    "nearby_channeling_center_ids": [
+      "C016"
+    ]
+  },
+  {
+    "pharmacy_id": "P077",
+    "name": "WellLife Pharmacy - Chilaw",
+    "city": "Chilaw",
+    "address": "276 Main Road, Chilaw",
+    "phone": "+94 11 5800076",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.5,
+    "nearby_hospital_ids": [
+      "H027"
+    ],
+    "nearby_channeling_center_ids": [
+      "C017"
+    ]
+  },
+  {
+    "pharmacy_id": "P078",
+    "name": "PharmaCare Pharmacy - Ampara",
+    "city": "Ampara",
+    "address": "277 Main Road, Ampara",
+    "phone": "+94 11 5800077",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.2,
+    "nearby_hospital_ids": [
+      "H028"
+    ],
+    "nearby_channeling_center_ids": [
+      "C018"
+    ]
+  },
+  {
+    "pharmacy_id": "P079",
+    "name": "Green Cross Pharmacy - Vavuniya",
+    "city": "Vavuniya",
+    "address": "278 Main Road, Vavuniya",
+    "phone": "+94 11 5800078",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.9,
+    "nearby_hospital_ids": [
+      "H029"
+    ],
+    "nearby_channeling_center_ids": [
+      "C019"
+    ]
+  },
+  {
+    "pharmacy_id": "P080",
+    "name": "LifeMed Pharmacy - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "279 Main Road, Kilinochchi",
+    "phone": "+94 11 5800079",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.6,
+    "nearby_hospital_ids": [
+      "H030"
+    ],
+    "nearby_channeling_center_ids": [
+      "C020"
+    ]
+  },
+  {
+    "pharmacy_id": "P081",
+    "name": "HealthGuard Pharmacy - Colombo",
+    "city": "Colombo",
+    "address": "280 Main Road, Colombo",
+    "phone": "+94 11 5800080",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.2,
+    "nearby_hospital_ids": [
+      "H031"
+    ],
+    "nearby_channeling_center_ids": [
+      "C021"
+    ]
+  },
+  {
+    "pharmacy_id": "P082",
+    "name": "CarePlus Pharmacy - Kandy",
+    "city": "Kandy",
+    "address": "281 Main Road, Kandy",
+    "phone": "+94 11 5800081",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.9,
+    "nearby_hospital_ids": [
+      "H032"
+    ],
+    "nearby_channeling_center_ids": [
+      "C022"
+    ]
+  },
+  {
+    "pharmacy_id": "P083",
+    "name": "MediTrust Pharmacy - Galle",
+    "city": "Galle",
+    "address": "282 Main Road, Galle",
+    "phone": "+94 11 5800082",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.6,
+    "nearby_hospital_ids": [
+      "H033"
+    ],
+    "nearby_channeling_center_ids": [
+      "C023"
+    ]
+  },
+  {
+    "pharmacy_id": "P084",
+    "name": "City Pharmacy Pharmacy - Negombo",
+    "city": "Negombo",
+    "address": "283 Main Road, Negombo",
+    "phone": "+94 11 5800083",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.3,
+    "nearby_hospital_ids": [
+      "H034"
+    ],
+    "nearby_channeling_center_ids": [
+      "C024"
+    ]
+  },
+  {
+    "pharmacy_id": "P085",
+    "name": "WellLife Pharmacy - Kurunegala",
+    "city": "Kurunegala",
+    "address": "284 Main Road, Kurunegala",
+    "phone": "+94 11 5800084",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 5.0,
+    "nearby_hospital_ids": [
+      "H035"
+    ],
+    "nearby_channeling_center_ids": [
+      "C025"
+    ]
+  },
+  {
+    "pharmacy_id": "P086",
+    "name": "PharmaCare Pharmacy - Matara",
+    "city": "Matara",
+    "address": "285 Main Road, Matara",
+    "phone": "+94 11 5800085",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.6,
+    "nearby_hospital_ids": [
+      "H036"
+    ],
+    "nearby_channeling_center_ids": [
+      "C026"
+    ]
+  },
+  {
+    "pharmacy_id": "P087",
+    "name": "Green Cross Pharmacy - Jaffna",
+    "city": "Jaffna",
+    "address": "286 Main Road, Jaffna",
+    "phone": "+94 11 5800086",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.3,
+    "nearby_hospital_ids": [
+      "H037"
+    ],
+    "nearby_channeling_center_ids": [
+      "C027"
+    ]
+  },
+  {
+    "pharmacy_id": "P088",
+    "name": "LifeMed Pharmacy - Batticaloa",
+    "city": "Batticaloa",
+    "address": "287 Main Road, Batticaloa",
+    "phone": "+94 11 5800087",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.0,
+    "nearby_hospital_ids": [
+      "H038"
+    ],
+    "nearby_channeling_center_ids": [
+      "C028"
+    ]
+  },
+  {
+    "pharmacy_id": "P089",
+    "name": "HealthGuard Pharmacy - Anuradhapura",
+    "city": "Anuradhapura",
+    "address": "288 Main Road, Anuradhapura",
+    "phone": "+94 11 5800088",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.7,
+    "nearby_hospital_ids": [
+      "H039"
+    ],
+    "nearby_channeling_center_ids": [
+      "C029"
+    ]
+  },
+  {
+    "pharmacy_id": "P090",
+    "name": "CarePlus Pharmacy - Badulla",
+    "city": "Badulla",
+    "address": "289 Main Road, Badulla",
+    "phone": "+94 11 5800089",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.3,
+    "nearby_hospital_ids": [
+      "H040"
+    ],
+    "nearby_channeling_center_ids": [
+      "C030"
+    ]
+  },
+  {
+    "pharmacy_id": "P091",
+    "name": "MediTrust Pharmacy - Ratnapura",
+    "city": "Ratnapura",
+    "address": "290 Main Road, Ratnapura",
+    "phone": "+94 11 5800090",
+    "open_24_hours": true,
+    "opening_hours": "24 Hours",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.0,
+    "nearby_hospital_ids": [
+      "H041"
+    ],
+    "nearby_channeling_center_ids": [
+      "C001"
+    ]
+  },
+  {
+    "pharmacy_id": "P092",
+    "name": "City Pharmacy Pharmacy - Kalutara",
+    "city": "Kalutara",
+    "address": "291 Main Road, Kalutara",
+    "phone": "+94 11 5800091",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.7,
+    "nearby_hospital_ids": [
+      "H042"
+    ],
+    "nearby_channeling_center_ids": [
+      "C002"
+    ]
+  },
+  {
+    "pharmacy_id": "P093",
+    "name": "WellLife Pharmacy - Trincomalee",
+    "city": "Trincomalee",
+    "address": "292 Main Road, Trincomalee",
+    "phone": "+94 11 5800092",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.4,
+    "nearby_hospital_ids": [
+      "H043"
+    ],
+    "nearby_channeling_center_ids": [
+      "C003"
+    ]
+  },
+  {
+    "pharmacy_id": "P094",
+    "name": "PharmaCare Pharmacy - Matale",
+    "city": "Matale",
+    "address": "293 Main Road, Matale",
+    "phone": "+94 11 5800093",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 2.0,
+    "nearby_hospital_ids": [
+      "H044"
+    ],
+    "nearby_channeling_center_ids": [
+      "C004"
+    ]
+  },
+  {
+    "pharmacy_id": "P095",
+    "name": "Green Cross Pharmacy - Hambantota",
+    "city": "Hambantota",
+    "address": "294 Main Road, Hambantota",
+    "phone": "+94 11 5800094",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.7,
+    "nearby_hospital_ids": [
+      "H045"
+    ],
+    "nearby_channeling_center_ids": [
+      "C005"
+    ]
+  },
+  {
+    "pharmacy_id": "P096",
+    "name": "LifeMed Pharmacy - Polonnaruwa",
+    "city": "Polonnaruwa",
+    "address": "295 Main Road, Polonnaruwa",
+    "phone": "+94 11 5800095",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 3.4,
+    "nearby_hospital_ids": [
+      "H046"
+    ],
+    "nearby_channeling_center_ids": [
+      "C006"
+    ]
+  },
+  {
+    "pharmacy_id": "P097",
+    "name": "HealthGuard Pharmacy - Chilaw",
+    "city": "Chilaw",
+    "address": "296 Main Road, Chilaw",
+    "phone": "+94 11 5800096",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 4.1,
+    "nearby_hospital_ids": [
+      "H047"
+    ],
+    "nearby_channeling_center_ids": [
+      "C007"
+    ]
+  },
+  {
+    "pharmacy_id": "P098",
+    "name": "CarePlus Pharmacy - Ampara",
+    "city": "Ampara",
+    "address": "297 Main Road, Ampara",
+    "phone": "+94 11 5800097",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 4.8,
+    "nearby_hospital_ids": [
+      "H048"
+    ],
+    "nearby_channeling_center_ids": [
+      "C008"
+    ]
+  },
+  {
+    "pharmacy_id": "P099",
+    "name": "MediTrust Pharmacy - Vavuniya",
+    "city": "Vavuniya",
+    "address": "298 Main Road, Vavuniya",
+    "phone": "+94 11 5800098",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": true,
+    "prescription_required": true,
+    "rating": 2.4,
+    "nearby_hospital_ids": [
+      "H049"
+    ],
+    "nearby_channeling_center_ids": [
+      "C009"
+    ]
+  },
+  {
+    "pharmacy_id": "P100",
+    "name": "City Pharmacy Pharmacy - Kilinochchi",
+    "city": "Kilinochchi",
+    "address": "299 Main Road, Kilinochchi",
+    "phone": "+94 11 5800099",
+    "open_24_hours": false,
+    "opening_hours": "08:00-22:00",
+    "delivery_available": false,
+    "prescription_required": true,
+    "rating": 3.1,
+    "nearby_hospital_ids": [
+      "H050"
+    ],
+    "nearby_channeling_center_ids": [
+      "C010"
+    ]
+  }
+]

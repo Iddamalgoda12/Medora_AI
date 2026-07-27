@@ -1,0 +1,2169 @@
+[
+  {
+    "doctor_id": "D001",
+    "name": "Dr. Nadeesha Silva",
+    "gender": "Male",
+    "specialization": "Ophthalmology",
+    "experience_years": 29,
+    "consultation_fee_lkr": 1800,
+    "rating": 2.5,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H002",
+      "H018",
+      "H048"
+    ],
+    "channeling_center_ids": [
+      "C008"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D002",
+    "name": "Dr. Umaya Ekanayake",
+    "gender": "Female",
+    "specialization": "Orthopedics",
+    "experience_years": 30,
+    "consultation_fee_lkr": 3000,
+    "rating": 4.1,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H036"
+    ],
+    "channeling_center_ids": [
+      "C007"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D003",
+    "name": "Dr. Harshini Gunawardena",
+    "gender": "Male",
+    "specialization": "Neurology",
+    "experience_years": 26,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.5,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H022"
+    ],
+    "channeling_center_ids": [
+      "C005",
+      "C009"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D004",
+    "name": "Dr. Pradeep Silva",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 25,
+    "consultation_fee_lkr": 2500,
+    "rating": 4.9,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H003",
+      "H030",
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C004",
+      "C018"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D005",
+    "name": "Dr. Ruwan Senanayake",
+    "gender": "Female",
+    "specialization": "Gynecology",
+    "experience_years": 25,
+    "consultation_fee_lkr": 2200,
+    "rating": 2.5,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H006",
+      "H019",
+      "H050"
+    ],
+    "channeling_center_ids": [
+      "C028"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D006",
+    "name": "Dr. Ashan Jayasinghe",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 26,
+    "consultation_fee_lkr": 3000,
+    "rating": 3.8,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H042",
+      "H044",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C003",
+      "C020"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D007",
+    "name": "Dr. Pradeep Wijesinghe",
+    "gender": "Male",
+    "specialization": "Orthopedics",
+    "experience_years": 22,
+    "consultation_fee_lkr": 2500,
+    "rating": 4.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H004",
+      "H015",
+      "H050"
+    ],
+    "channeling_center_ids": [
+      "C002",
+      "C027"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D008",
+    "name": "Dr. Supun Herath",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 27,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H009",
+      "H010",
+      "H017"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C024"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D009",
+    "name": "Dr. Dinesh Senanayake",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 26,
+    "consultation_fee_lkr": 5000,
+    "rating": 2.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H004",
+      "H006",
+      "H049"
+    ],
+    "channeling_center_ids": [
+      "C004",
+      "C028"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D010",
+    "name": "Dr. Shehan Silva",
+    "gender": "Female",
+    "specialization": "General Medicine",
+    "experience_years": 12,
+    "consultation_fee_lkr": 5000,
+    "rating": 4.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H035",
+      "H044",
+      "H049"
+    ],
+    "channeling_center_ids": [
+      "C009"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D011",
+    "name": "Dr. Ishara Herath",
+    "gender": "Male",
+    "specialization": "Dermatology",
+    "experience_years": 25,
+    "consultation_fee_lkr": 2200,
+    "rating": 4.5,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H007",
+      "H033",
+      "H041"
+    ],
+    "channeling_center_ids": [
+      "C010"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D012",
+    "name": "Dr. Dinushi Wijesinghe",
+    "gender": "Male",
+    "specialization": "Cardiology",
+    "experience_years": 17,
+    "consultation_fee_lkr": 2000,
+    "rating": 4.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H002",
+      "H008",
+      "H032"
+    ],
+    "channeling_center_ids": [
+      "C012",
+      "C030"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D013",
+    "name": "Dr. Ashan Fernando",
+    "gender": "Female",
+    "specialization": "Psychiatry",
+    "experience_years": 29,
+    "consultation_fee_lkr": 2500,
+    "rating": 3.3,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H009"
+    ],
+    "channeling_center_ids": [
+      "C022"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D014",
+    "name": "Dr. Lakmal Silva",
+    "gender": "Male",
+    "specialization": "Orthopedics",
+    "experience_years": 6,
+    "consultation_fee_lkr": 3500,
+    "rating": 4.7,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H026",
+      "H042",
+      "H043"
+    ],
+    "channeling_center_ids": [
+      "C012",
+      "C015"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D015",
+    "name": "Dr. Lahiru Perera",
+    "gender": "Female",
+    "specialization": "Neurology",
+    "experience_years": 34,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H001",
+      "H005",
+      "H046"
+    ],
+    "channeling_center_ids": [
+      "C021"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D016",
+    "name": "Dr. Gayan Karunaratne",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 28,
+    "consultation_fee_lkr": 2500,
+    "rating": 4.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C030"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D017",
+    "name": "Dr. Sanduni Silva",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 23,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H027",
+      "H030"
+    ],
+    "channeling_center_ids": [
+      "C024",
+      "C028"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D018",
+    "name": "Dr. Piumi Silva",
+    "gender": "Female",
+    "specialization": "Psychiatry",
+    "experience_years": 8,
+    "consultation_fee_lkr": 1800,
+    "rating": 2.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H009",
+      "H012",
+      "H028"
+    ],
+    "channeling_center_ids": [
+      "C009",
+      "C015"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D019",
+    "name": "Dr. Amila Senanayake",
+    "gender": "Male",
+    "specialization": "Dermatology",
+    "experience_years": 26,
+    "consultation_fee_lkr": 1800,
+    "rating": 3.4,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H011"
+    ],
+    "channeling_center_ids": [
+      "C014"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D020",
+    "name": "Dr. Umaya Karunaratne",
+    "gender": "Male",
+    "specialization": "Orthopedics",
+    "experience_years": 20,
+    "consultation_fee_lkr": 2500,
+    "rating": 3.6,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H028",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C024",
+      "C026"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D021",
+    "name": "Dr. Dinesh Perera",
+    "gender": "Male",
+    "specialization": "Dermatology",
+    "experience_years": 6,
+    "consultation_fee_lkr": 2000,
+    "rating": 4.5,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H004",
+      "H031",
+      "H038"
+    ],
+    "channeling_center_ids": [
+      "C017",
+      "C030"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D022",
+    "name": "Dr. Dilshan Silva",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 35,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.7,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H016",
+      "H037"
+    ],
+    "channeling_center_ids": [
+      "C019"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D023",
+    "name": "Dr. Lakmal Gunawardena",
+    "gender": "Male",
+    "specialization": "Cardiology",
+    "experience_years": 31,
+    "consultation_fee_lkr": 2000,
+    "rating": 3.9,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H016",
+      "H017",
+      "H026"
+    ],
+    "channeling_center_ids": [
+      "C005",
+      "C022"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D024",
+    "name": "Dr. Dinesh Karunaratne",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 35,
+    "consultation_fee_lkr": 1800,
+    "rating": 3.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H005",
+      "H009",
+      "H023"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C029"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D025",
+    "name": "Dr. Ashan Fernando",
+    "gender": "Female",
+    "specialization": "ENT",
+    "experience_years": 15,
+    "consultation_fee_lkr": 3500,
+    "rating": 2.1,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H008",
+      "H009",
+      "H017"
+    ],
+    "channeling_center_ids": [
+      "C029"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D026",
+    "name": "Dr. Kasun Perera",
+    "gender": "Female",
+    "specialization": "Dermatology",
+    "experience_years": 18,
+    "consultation_fee_lkr": 2200,
+    "rating": 4.5,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H004",
+      "H006",
+      "H017"
+    ],
+    "channeling_center_ids": [
+      "C014",
+      "C021"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D027",
+    "name": "Dr. Kasun Gunawardena",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 10,
+    "consultation_fee_lkr": 1800,
+    "rating": 2.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H005",
+      "H008",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C029"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D028",
+    "name": "Dr. Harshini Ekanayake",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 11,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.1,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H016",
+      "H044"
+    ],
+    "channeling_center_ids": [
+      "C022"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D029",
+    "name": "Dr. Piumi Senanayake",
+    "gender": "Male",
+    "specialization": "ENT",
+    "experience_years": 12,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.9,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H012",
+      "H048"
+    ],
+    "channeling_center_ids": [
+      "C030"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D030",
+    "name": "Dr. Anjali Jayasinghe",
+    "gender": "Male",
+    "specialization": "Cardiology",
+    "experience_years": 14,
+    "consultation_fee_lkr": 4000,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H013",
+      "H030"
+    ],
+    "channeling_center_ids": [
+      "C012"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D031",
+    "name": "Dr. Ashan Gunawardena",
+    "gender": "Male",
+    "specialization": "Neurology",
+    "experience_years": 18,
+    "consultation_fee_lkr": 2200,
+    "rating": 4.9,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H033",
+      "H042"
+    ],
+    "channeling_center_ids": [
+      "C013",
+      "C022"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D032",
+    "name": "Dr. Anjali Gunawardena",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 34,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.9,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H039"
+    ],
+    "channeling_center_ids": [
+      "C014"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D033",
+    "name": "Dr. Anjali Ekanayake",
+    "gender": "Male",
+    "specialization": "Pediatrics",
+    "experience_years": 29,
+    "consultation_fee_lkr": 2000,
+    "rating": 3.5,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H028",
+      "H046"
+    ],
+    "channeling_center_ids": [
+      "C001"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D034",
+    "name": "Dr. Thilini Senanayake",
+    "gender": "Female",
+    "specialization": "General Medicine",
+    "experience_years": 20,
+    "consultation_fee_lkr": 6500,
+    "rating": 3.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H008",
+      "H043",
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C010",
+      "C029"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D035",
+    "name": "Dr. Ashan Perera",
+    "gender": "Female",
+    "specialization": "ENT",
+    "experience_years": 15,
+    "consultation_fee_lkr": 4000,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H012",
+      "H044",
+      "H048"
+    ],
+    "channeling_center_ids": [
+      "C019",
+      "C020"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D036",
+    "name": "Dr. Maleesha Fernando",
+    "gender": "Male",
+    "specialization": "ENT",
+    "experience_years": 34,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H029",
+      "H044"
+    ],
+    "channeling_center_ids": [
+      "C007",
+      "C017"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D037",
+    "name": "Dr. Chamara Herath",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 28,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.6,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H010",
+      "H013",
+      "H015"
+    ],
+    "channeling_center_ids": [
+      "C001",
+      "C002"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D038",
+    "name": "Dr. Harshini Silva",
+    "gender": "Female",
+    "specialization": "Orthopedics",
+    "experience_years": 13,
+    "consultation_fee_lkr": 6500,
+    "rating": 1.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H010",
+      "H016"
+    ],
+    "channeling_center_ids": [
+      "C021",
+      "C023"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D039",
+    "name": "Dr. Ashan Herath",
+    "gender": "Female",
+    "specialization": "Gynecology",
+    "experience_years": 34,
+    "consultation_fee_lkr": 4000,
+    "rating": 3.9,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H009"
+    ],
+    "channeling_center_ids": [
+      "C015",
+      "C026"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D040",
+    "name": "Dr. Sanduni Wijesinghe",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 17,
+    "consultation_fee_lkr": 3000,
+    "rating": 2.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H029"
+    ],
+    "channeling_center_ids": [
+      "C009",
+      "C025"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D041",
+    "name": "Dr. Saman Fernando",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 11,
+    "consultation_fee_lkr": 2500,
+    "rating": 3.5,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H022"
+    ],
+    "channeling_center_ids": [
+      "C011",
+      "C029"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D042",
+    "name": "Dr. Maleesha Herath",
+    "gender": "Male",
+    "specialization": "Ophthalmology",
+    "experience_years": 26,
+    "consultation_fee_lkr": 5000,
+    "rating": 3.1,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H004",
+      "H027"
+    ],
+    "channeling_center_ids": [
+      "C007",
+      "C027"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D043",
+    "name": "Dr. Maleesha Jayasinghe",
+    "gender": "Female",
+    "specialization": "Orthopedics",
+    "experience_years": 19,
+    "consultation_fee_lkr": 4000,
+    "rating": 4.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H027",
+      "H035"
+    ],
+    "channeling_center_ids": [
+      "C018",
+      "C024"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D044",
+    "name": "Dr. Dilshan Ekanayake",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 3,
+    "consultation_fee_lkr": 2000,
+    "rating": 4.7,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H011",
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C015",
+      "C027"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D045",
+    "name": "Dr. Lakmal Gunawardena",
+    "gender": "Female",
+    "specialization": "General Medicine",
+    "experience_years": 19,
+    "consultation_fee_lkr": 4000,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H004",
+      "H017"
+    ],
+    "channeling_center_ids": [
+      "C013"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D046",
+    "name": "Dr. Roshan Jayasinghe",
+    "gender": "Male",
+    "specialization": "Urology",
+    "experience_years": 4,
+    "consultation_fee_lkr": 1800,
+    "rating": 5.0,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H035",
+      "H048"
+    ],
+    "channeling_center_ids": [
+      "C002"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D047",
+    "name": "Dr. Ruwan Herath",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 18,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H016"
+    ],
+    "channeling_center_ids": [
+      "C005"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D048",
+    "name": "Dr. Gayan Senanayake",
+    "gender": "Female",
+    "specialization": "Nephrology",
+    "experience_years": 14,
+    "consultation_fee_lkr": 2000,
+    "rating": 4.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H007"
+    ],
+    "channeling_center_ids": [
+      "C001",
+      "C019"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D049",
+    "name": "Dr. Gayan Perera",
+    "gender": "Female",
+    "specialization": "Psychiatry",
+    "experience_years": 29,
+    "consultation_fee_lkr": 3500,
+    "rating": 2.2,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H044"
+    ],
+    "channeling_center_ids": [
+      "C020",
+      "C026"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D050",
+    "name": "Dr. Sanduni Karunaratne",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 13,
+    "consultation_fee_lkr": 6500,
+    "rating": 4.9,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H032"
+    ],
+    "channeling_center_ids": [
+      "C004",
+      "C014"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D051",
+    "name": "Dr. Tharindu Silva",
+    "gender": "Female",
+    "specialization": "Gynecology",
+    "experience_years": 17,
+    "consultation_fee_lkr": 5000,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H028",
+      "H030",
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C009",
+      "C019"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D052",
+    "name": "Dr. Roshan Wijesinghe",
+    "gender": "Female",
+    "specialization": "ENT",
+    "experience_years": 19,
+    "consultation_fee_lkr": 6500,
+    "rating": 3.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H021",
+      "H032"
+    ],
+    "channeling_center_ids": [
+      "C006"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D053",
+    "name": "Dr. Harshini Jayasinghe",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 33,
+    "consultation_fee_lkr": 5000,
+    "rating": 3.4,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C014"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D054",
+    "name": "Dr. Gayan Gunawardena",
+    "gender": "Female",
+    "specialization": "Psychiatry",
+    "experience_years": 35,
+    "consultation_fee_lkr": 3500,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H026",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C008"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D055",
+    "name": "Dr. Amila Gunawardena",
+    "gender": "Male",
+    "specialization": "Nephrology",
+    "experience_years": 13,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.2,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H018",
+      "H020"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C009"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D056",
+    "name": "Dr. Chathura Perera",
+    "gender": "Male",
+    "specialization": "ENT",
+    "experience_years": 4,
+    "consultation_fee_lkr": 1800,
+    "rating": 3.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H007",
+      "H013"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C010"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D057",
+    "name": "Dr. Shehan Fernando",
+    "gender": "Male",
+    "specialization": "ENT",
+    "experience_years": 32,
+    "consultation_fee_lkr": 2000,
+    "rating": 3.3,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H001",
+      "H007",
+      "H037"
+    ],
+    "channeling_center_ids": [
+      "C010",
+      "C016"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D058",
+    "name": "Dr. Saman Herath",
+    "gender": "Female",
+    "specialization": "Neurology",
+    "experience_years": 17,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H037",
+      "H041"
+    ],
+    "channeling_center_ids": [
+      "C022"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D059",
+    "name": "Dr. Chathura Herath",
+    "gender": "Female",
+    "specialization": "ENT",
+    "experience_years": 5,
+    "consultation_fee_lkr": 2000,
+    "rating": 4.7,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H025",
+      "H034",
+      "H050"
+    ],
+    "channeling_center_ids": [
+      "C015"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D060",
+    "name": "Dr. Ashan Silva",
+    "gender": "Male",
+    "specialization": "Cardiology",
+    "experience_years": 28,
+    "consultation_fee_lkr": 5000,
+    "rating": 2.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H006",
+      "H017",
+      "H043"
+    ],
+    "channeling_center_ids": [
+      "C006"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D061",
+    "name": "Dr. Sachini Karunaratne",
+    "gender": "Male",
+    "specialization": "Urology",
+    "experience_years": 16,
+    "consultation_fee_lkr": 3000,
+    "rating": 2.7,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H015",
+      "H019"
+    ],
+    "channeling_center_ids": [
+      "C023"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D062",
+    "name": "Dr. Supun Fernando",
+    "gender": "Male",
+    "specialization": "Cardiology",
+    "experience_years": 12,
+    "consultation_fee_lkr": 3000,
+    "rating": 2.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H015",
+      "H035"
+    ],
+    "channeling_center_ids": [
+      "C021"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D063",
+    "name": "Dr. Supun Ekanayake",
+    "gender": "Female",
+    "specialization": "Gynecology",
+    "experience_years": 7,
+    "consultation_fee_lkr": 1800,
+    "rating": 4.0,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H030",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C010"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D064",
+    "name": "Dr. Gayan Perera",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 4,
+    "consultation_fee_lkr": 2200,
+    "rating": 4.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H002",
+      "H006",
+      "H015"
+    ],
+    "channeling_center_ids": [
+      "C022",
+      "C027"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D065",
+    "name": "Dr. Lahiru Karunaratne",
+    "gender": "Female",
+    "specialization": "General Medicine",
+    "experience_years": 23,
+    "consultation_fee_lkr": 3500,
+    "rating": 4.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H028",
+      "H038"
+    ],
+    "channeling_center_ids": [
+      "C021"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D066",
+    "name": "Dr. Dinushi Ekanayake",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 7,
+    "consultation_fee_lkr": 3500,
+    "rating": 4.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H032",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C010",
+      "C022"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D067",
+    "name": "Dr. Amila Ekanayake",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 33,
+    "consultation_fee_lkr": 5000,
+    "rating": 3.1,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H035",
+      "H043"
+    ],
+    "channeling_center_ids": [
+      "C015"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D068",
+    "name": "Dr. Ruwan Perera",
+    "gender": "Male",
+    "specialization": "Nephrology",
+    "experience_years": 12,
+    "consultation_fee_lkr": 3000,
+    "rating": 4.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H019",
+      "H029"
+    ],
+    "channeling_center_ids": [
+      "C029"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D069",
+    "name": "Dr. Sanduni Fernando",
+    "gender": "Female",
+    "specialization": "Nephrology",
+    "experience_years": 20,
+    "consultation_fee_lkr": 6500,
+    "rating": 4.8,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H008"
+    ],
+    "channeling_center_ids": [
+      "C015"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D070",
+    "name": "Dr. Piumi Herath",
+    "gender": "Male",
+    "specialization": "Neurology",
+    "experience_years": 19,
+    "consultation_fee_lkr": 4000,
+    "rating": 3.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H016",
+      "H030"
+    ],
+    "channeling_center_ids": [
+      "C005",
+      "C018"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D071",
+    "name": "Dr. Thilini Karunaratne",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 32,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.7,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C010",
+      "C027"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D072",
+    "name": "Dr. Sachini Senanayake",
+    "gender": "Male",
+    "specialization": "Pediatrics",
+    "experience_years": 32,
+    "consultation_fee_lkr": 4000,
+    "rating": 3.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H013",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C019"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D073",
+    "name": "Dr. Ruwan Karunaratne",
+    "gender": "Male",
+    "specialization": "Psychiatry",
+    "experience_years": 31,
+    "consultation_fee_lkr": 1800,
+    "rating": 2.9,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H009",
+      "H033"
+    ],
+    "channeling_center_ids": [
+      "C019"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D074",
+    "name": "Dr. Pradeep Silva",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 26,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H005",
+      "H017",
+      "H031"
+    ],
+    "channeling_center_ids": [
+      "C011"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D075",
+    "name": "Dr. Chathura Jayasinghe",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 8,
+    "consultation_fee_lkr": 2000,
+    "rating": 4.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H005",
+      "H016",
+      "H040"
+    ],
+    "channeling_center_ids": [
+      "C021"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D076",
+    "name": "Dr. Roshan Gunawardena",
+    "gender": "Female",
+    "specialization": "Dermatology",
+    "experience_years": 17,
+    "consultation_fee_lkr": 6500,
+    "rating": 2.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H021"
+    ],
+    "channeling_center_ids": [
+      "C026"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D077",
+    "name": "Dr. Dilshan Jayasinghe",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 11,
+    "consultation_fee_lkr": 2500,
+    "rating": 4.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H006"
+    ],
+    "channeling_center_ids": [
+      "C020"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D078",
+    "name": "Dr. Chathura Ekanayake",
+    "gender": "Male",
+    "specialization": "Neurology",
+    "experience_years": 30,
+    "consultation_fee_lkr": 3500,
+    "rating": 3.3,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H001",
+      "H043"
+    ],
+    "channeling_center_ids": [
+      "C026",
+      "C029"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D079",
+    "name": "Dr. Pradeep Karunaratne",
+    "gender": "Male",
+    "specialization": "Orthopedics",
+    "experience_years": 26,
+    "consultation_fee_lkr": 3500,
+    "rating": 2.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H017",
+      "H030",
+      "H045"
+    ],
+    "channeling_center_ids": [
+      "C010",
+      "C028"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D080",
+    "name": "Dr. Harshini Perera",
+    "gender": "Female",
+    "specialization": "ENT",
+    "experience_years": 16,
+    "consultation_fee_lkr": 3500,
+    "rating": 4.6,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H018"
+    ],
+    "channeling_center_ids": [
+      "C001",
+      "C019"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D081",
+    "name": "Dr. Saman Silva",
+    "gender": "Male",
+    "specialization": "ENT",
+    "experience_years": 30,
+    "consultation_fee_lkr": 1800,
+    "rating": 4.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H044",
+      "H047",
+      "H049"
+    ],
+    "channeling_center_ids": [
+      "C022",
+      "C025"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D082",
+    "name": "Dr. Saman Ekanayake",
+    "gender": "Female",
+    "specialization": "Psychiatry",
+    "experience_years": 34,
+    "consultation_fee_lkr": 3000,
+    "rating": 2.4,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H021"
+    ],
+    "channeling_center_ids": [
+      "C014",
+      "C024"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D083",
+    "name": "Dr. Lahiru Fernando",
+    "gender": "Male",
+    "specialization": "Urology",
+    "experience_years": 27,
+    "consultation_fee_lkr": 6500,
+    "rating": 3.3,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H022",
+      "H048"
+    ],
+    "channeling_center_ids": [
+      "C004",
+      "C026"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D084",
+    "name": "Dr. Nadeesha Wijesinghe",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 25,
+    "consultation_fee_lkr": 2000,
+    "rating": 3.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H035"
+    ],
+    "channeling_center_ids": [
+      "C004",
+      "C015"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D085",
+    "name": "Dr. Dinushi Karunaratne",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 28,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H040"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C021"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D086",
+    "name": "Dr. Pradeep Karunaratne",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 28,
+    "consultation_fee_lkr": 2200,
+    "rating": 3.5,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H007",
+      "H008"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C029"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D087",
+    "name": "Dr. Lakmal Jayasinghe",
+    "gender": "Female",
+    "specialization": "Neurology",
+    "experience_years": 25,
+    "consultation_fee_lkr": 6500,
+    "rating": 2.5,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H003",
+      "H018"
+    ],
+    "channeling_center_ids": [
+      "C012",
+      "C023"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D088",
+    "name": "Dr. Dinushi Karunaratne",
+    "gender": "Male",
+    "specialization": "Urology",
+    "experience_years": 15,
+    "consultation_fee_lkr": 1800,
+    "rating": 4.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H018"
+    ],
+    "channeling_center_ids": [
+      "C004",
+      "C007"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D089",
+    "name": "Dr. Harshini Ekanayake",
+    "gender": "Male",
+    "specialization": "Ophthalmology",
+    "experience_years": 15,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.0,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H037"
+    ],
+    "channeling_center_ids": [
+      "C007"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D090",
+    "name": "Dr. Dinesh Silva",
+    "gender": "Male",
+    "specialization": "Dermatology",
+    "experience_years": 2,
+    "consultation_fee_lkr": 3500,
+    "rating": 2.6,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H009",
+      "H010",
+      "H018"
+    ],
+    "channeling_center_ids": [
+      "C018"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D091",
+    "name": "Dr. Ishara Silva",
+    "gender": "Male",
+    "specialization": "Gynecology",
+    "experience_years": 30,
+    "consultation_fee_lkr": 3500,
+    "rating": 4.2,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H002",
+      "H012",
+      "H017"
+    ],
+    "channeling_center_ids": [
+      "C002",
+      "C005"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D092",
+    "name": "Dr. Sachini Ekanayake",
+    "gender": "Female",
+    "specialization": "Gynecology",
+    "experience_years": 3,
+    "consultation_fee_lkr": 1800,
+    "rating": 4.3,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H003",
+      "H040"
+    ],
+    "channeling_center_ids": [
+      "C024"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D093",
+    "name": "Dr. Maleesha Silva",
+    "gender": "Female",
+    "specialization": "Ophthalmology",
+    "experience_years": 11,
+    "consultation_fee_lkr": 2000,
+    "rating": 3.2,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H032",
+      "H046"
+    ],
+    "channeling_center_ids": [
+      "C030"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D094",
+    "name": "Dr. Umaya Silva",
+    "gender": "Male",
+    "specialization": "General Medicine",
+    "experience_years": 30,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.1,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H030",
+      "H033"
+    ],
+    "channeling_center_ids": [
+      "C014",
+      "C020"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D095",
+    "name": "Dr. Supun Gunawardena",
+    "gender": "Male",
+    "specialization": "Urology",
+    "experience_years": 32,
+    "consultation_fee_lkr": 2000,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H007",
+      "H047"
+    ],
+    "channeling_center_ids": [
+      "C011",
+      "C014"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D096",
+    "name": "Dr. Ashan Perera",
+    "gender": "Female",
+    "specialization": "Urology",
+    "experience_years": 9,
+    "consultation_fee_lkr": 4000,
+    "rating": 4.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H007"
+    ],
+    "channeling_center_ids": [
+      "C012",
+      "C024"
+    ],
+    "accepting_new_patients": false
+  },
+  {
+    "doctor_id": "D097",
+    "name": "Dr. Ishara Jayasinghe",
+    "gender": "Male",
+    "specialization": "Urology",
+    "experience_years": 32,
+    "consultation_fee_lkr": 2500,
+    "rating": 2.1,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H019",
+      "H020",
+      "H039"
+    ],
+    "channeling_center_ids": [
+      "C012"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D098",
+    "name": "Dr. Sachini Ekanayake",
+    "gender": "Male",
+    "specialization": "Ophthalmology",
+    "experience_years": 19,
+    "consultation_fee_lkr": 1800,
+    "rating": 4.4,
+    "languages": [
+      "English",
+      "Sinhala"
+    ],
+    "hospital_ids": [
+      "H008",
+      "H018",
+      "H049"
+    ],
+    "channeling_center_ids": [
+      "C008",
+      "C019"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D099",
+    "name": "Dr. Pradeep Silva",
+    "gender": "Male",
+    "specialization": "Nephrology",
+    "experience_years": 3,
+    "consultation_fee_lkr": 2000,
+    "rating": 3.6,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H001",
+      "H012"
+    ],
+    "channeling_center_ids": [
+      "C005",
+      "C028"
+    ],
+    "accepting_new_patients": true
+  },
+  {
+    "doctor_id": "D100",
+    "name": "Dr. Shehan Herath",
+    "gender": "Male",
+    "specialization": "Cardiology",
+    "experience_years": 11,
+    "consultation_fee_lkr": 2200,
+    "rating": 2.8,
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "hospital_ids": [
+      "H022",
+      "H030"
+    ],
+    "channeling_center_ids": [
+      "C006",
+      "C012"
+    ],
+    "accepting_new_patients": true
+  }
+]
