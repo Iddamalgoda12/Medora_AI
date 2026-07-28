@@ -29,8 +29,16 @@ def load_document(file_path: str):
 
     with open(file_path, "r", encoding="utf-8") as file_handle:
         return [
-            Document(
-                page_content=file_handle.read(),
-                metadata={"source": file_path},
-            )
+                Document(
+                    page_content=file_handle.read(),
+                    metadata={"source": file_path},
+                )
         ]
+
+
+def load_all_documents(file_paths: list[Path]) -> dict[Path, list[Document]]:
+    """Load documents for each file path and return them keyed by path."""
+    return {
+        path: load_document(str(path))
+        for path in file_paths
+    }

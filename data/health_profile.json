@@ -4,7 +4,10 @@
     "Stable angina",
     "Hypertension",
     "Type 2 diabetes mellitus",
-    "Hyperlipidemia"
+    "Hyperlipidemia",
+    "Viral upper respiratory tract infection",
+    "Post-viral cough",
+    "Acute inferior ST-elevation myocardial infarction (STEMI)"
   ],
   "medicines": [
     "Aspirin 81 mg orally once daily",
@@ -12,53 +15,51 @@
     "Metformin 1000 mg orally twice daily with meals",
     "Amlodipine 5 mg orally once daily",
     "Losartan 50 mg orally once daily",
-    "Glyceryl trinitrate sublingual tablets as needed for chest pain"
+    "Glyceryl trinitrate sublingual tablets as needed for chest pain",
+    "Aspirin 81 mg daily",
+    "Clopidogrel 75 mg daily",
+    "Atorvastatin 80 mg nightly",
+    "Metoprolol Succinate 50 mg daily",
+    "Ramipril 5 mg daily",
+    "Metformin 500 mg twice daily"
   ],
   "allergies": [
     "No known drug allergies"
   ],
-  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The newly uploaded 'Medical Discharge Summary' is for Patient Name: John Perera, Age: 58 years, Sex: Male, Hospital Number: MRN-2026-104582. This conflicts significantly with the primary profile's original patient ID (CLN-2026-001, age 45, sex Male). The clinical context (chest pain, stable angina, hypertension, type 2 diabetes, hyperlipidemia) is entirely distinct from the previous profile's context (viral URI, post-viral cough, borderline labs). The profile has been updated based on the new report, assuming it represents the current patient's status, but this conflict requires urgent clarification. (Previous note: Demographic details in a prior Laboratory Investigation Report (LAB-2026-014, age 62, sex Female) also conflicted with the primary profile.) This update reflects a recent hospitalization (12-15 June 2026) for intermittent central chest discomfort, diagnosed as stable angina, hypertension, type 2 diabetes mellitus, and hyperlipidemia. Investigations included normal cardiac troponins, elevated fasting glucose (162 mg/dL), HbA1c (7.8%), and elevated LDL cholesterol (148 mg/dL). Patient discharged on Aspirin, Atorvastatin, Metformin, Amlodipine, Losartan, and sublingual Glyceryl trinitrate, with emphasis on lifestyle modification, medication compliance, and home monitoring. Specific follow-ups with cardiology and PCP are recommended.",
+  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The patient ID CLN-2026-001 has highly conflicting demographic and clinical data across multiple reports.\nThis profile has been updated by processing the 'Medical Discharge Summary.pdf' (for Patient Name: John Perera, Age: 58 years, Sex: Male, Hospital Number: MRN-2026-104582, hospitalization 12-15 June 2026), which details stable angina, hypertension, type 2 diabetes mellitus, and hyperlipidemia.\nHowever, the profile's patient demographics (age 45, sex Male) and current clinical context (viral upper respiratory tract infection with post-viral cough, vitals: BP 128/82, HR 78, Temp 37.2, SpO2 97%) still reflect data from a *subsequent* 'Clinical Consultation Report' (sample_clinical_report_01.pdf) for CLN-2026-001 (Age: 45, Sex: Male). This age (45) aligns with the primary profile's *original* patient ID (CLN-2026-001, age 45, sex Male), but directly contradicts the 'John Perera' and 'John Smith' data from discharge summaries.\nThe retention of 'John Perera' and hospital number 'MRN-2026-104582' (from the age 58 patient) alongside the age 45 and viral URI context (from the age 45 patient) exacerbates the demographic and clinical inconsistency, strongly suggesting data for two distinct patients has been merged under CLN-2026-001. Urgent clarification is required regarding the true identity and medical history associated with CLN-2026-001.\n(Previous note: Demographic details in a prior Laboratory Investigation Report (LAB-2026-014, age 62, sex Female) also conflicted with the primary profile.)\nNew medical report details acute inferior STEMI, with successful PCI and stent placement. Discharge medications include Aspirin, Clopidogrel, Atorvastatin, Metoprolol, Ramipril, and Metformin.",
   "vitals": {
     "temperature_c": 36.8,
-    "blood_pressure_mmhg": "158/96",
-    "heart_rate_bpm": 94,
-    "spo2_percent": 98,
-    "respiratory_rate_bpm": 18
+    "blood_pressure_mmhg": "156/94",
+    "heart_rate_bpm": 102,
+    "spo2_percent": 97,
+    "respiratory_rate_bpm": 20
   },
-  "chief_complaint": "Intermittent central chest discomfort lasting approximately two hours, described as pressure-like, radiating to the left shoulder, and associated with mild shortness of breath and sweating.",
-  "history_of_present_illness": "Chest discomfort began while climbing stairs and improved partially with rest. Denied fever, cough, abdominal pain, or recent trauma. Medication adherence was inconsistent during the previous month.",
+  "chief_complaint": "Chest pain radiating to the left arm for approximately two hours, associated with sweating and mild shortness of breath.",
+  "history_of_present_illness": "The patient presented to the emergency department after experiencing sudden onset central chest pain while walking. The pain was described as heavy, 8/10 in intensity, radiating to the left shoulder and arm.",
   "patient_demographics": {
     "patient_id": "CLN-2026-001",
-    "name": "John Perera",
+    "name": "John Smith",
     "age": 58,
     "sex": "Male",
-    "hospital_number": "MRN-2026-104582"
+    "hospital_number": "MRN-458721"
   },
   "lab_results": {
-    "date_of_report": "2026-06-15",
+    "date_of_report": "2026-07-18",
     "requested_tests": [
       "Electrocardiogram (ECG)",
       "Cardiac Troponin",
       "Complete Blood Count (CBC)",
       "Serum Creatinine",
-      "Fasting Blood Glucose",
-      "HbA1c",
-      "Lipid Profile (LDL Cholesterol)",
-      "Chest Radiograph",
-      "Transthoracic Echocardiography"
+      "Random Blood Glucose",
+      "Lipid Profile"
     ],
     "results": {
-      "ECG Findings": "Nonspecific ST-segment changes, no acute ST-elevation",
-      "Cardiac Troponin": "Within normal reference range",
-      "CBC": "Unremarkable",
-      "Serum Creatinine": "0.9 mg/dL",
-      "eGFR": "> 90 mL/min/1.73 m²",
-      "Fasting Blood Glucose": "162 mg/dL",
-      "HbA1c": "7.8%",
-      "LDL Cholesterol": "148 mg/dL",
-      "Chest Radiograph": "No acute cardiopulmonary abnormality",
-      "Ejection Fraction": "60%",
-      "Valvular Disease": "No significant"
+      "ECG Findings": "ST-segment elevation in leads II, III, and aVF, consistent with an acute inferior STEMI",
+      "Cardiac Troponin": "12.6 ng/mL",
+      "CBC": "Within normal limits",
+      "Serum Creatinine": "Within normal limits",
+      "Random Blood Glucose": "198 mg/dL",
+      "Lipid Profile": "Elevated total cholesterol (238 mg/dL), LDL cholesterol (162 mg/dL), HDL cholesterol (39 mg/dL), and triglycerides (214 mg/dL)"
     }
   },
   "recommendations": [
@@ -68,14 +69,19 @@
     "Home blood glucose monitoring",
     "Low-sodium, heart-healthy diet",
     "Regular moderate exercise",
-    "Seek immediate medical attention if chest pain becomes severe, persistent, occurs at rest, or is accompanied by shortness of breath, dizziness, or loss of consciousness"
+    "Seek immediate medical attention if chest pain, severe shortness of breath, or fainting recurs",
+    "Attend cardiac rehabilitation",
+    "Stop smoking completely"
   ],
   "past_medical_history": [
     "Hypertension (10 years)",
     "Type 2 Diabetes Mellitus (8 years)",
     "Hyperlipidemia",
     "No known chronic kidney disease",
-    "No previous myocardial infarction"
+    "No previous myocardial infarction",
+    "Smoking (one pack of cigarettes daily for over 25 years)"
   ],
-  "last_updated": "2026-07-06"
+  "assessment": "Acute inferior STEMI, treated with PCI and stent placement.",
+  "plan": "Hydration, symptomatic treatment, follow-up in 2 weeks if symptoms persist, cardiac rehabilitation, and smoking cessation.",
+  "last_updated": "2026-07-26"
 }
