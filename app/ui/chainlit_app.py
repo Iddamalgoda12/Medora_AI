@@ -18,12 +18,26 @@ async def on_chat_start() -> None:
     state = create_initial_state()
     cl.user_session.set("state", state)
     cl.user_session.set("thread_id", f"doctor-{uuid4()}")
+    cl.user_session.set("upload_mode", False)
     await show_health_profile_sidebar()
     await show_home()
 
 
 @cl.on_message
 async def on_message(message: cl.Message) -> None:
+    upload_mode = bool(cl.user_session.get("upload_mode"))
+    if upload_mode and message.elements:
+        pdfs = [
+            el
+            for el in message.elements
+            if getattr(el, "mime", "") == "application/pdf"
+            or getattr(el, "name", "").lower().endswith(".pdf")
+        ]
+        if pdfs:
+            await run_report_upload_workflow(pdfs)
+            cl.user_session.set("upload_mode", False)
+            return
+
     state = cl.user_session.get("state") or create_initial_state()
     thread_id = cl.user_session.get("thread_id")
 
@@ -46,17 +60,12 @@ async def on_message(message: cl.Message) -> None:
 @cl.action_callback("upload_health_records")
 async def on_upload_health_records(action: cl.Action) -> None:
     try:
-        files = await cl.AskFileMessage(
-            content="Upload your medical report PDF(s).",
-            accept=["application/pdf"],
-            max_files=10,
-            max_size_mb=100,
+        cl.user_session.set("upload_mode", True)
+        await cl.Message(
+            content=(
+                "Upload mode is now on. Attach your medical report PDF(s) to the next message and send it."
+            )
         ).send()
-        if not files:
-            await cl.Message(content="No PDF files were selected.").send()
-            return
-
-        await run_report_upload_workflow(files)
     except Exception as exc:
         logger.exception("Report upload workflow failed.")
         await cl.Message(content=f"❌ Could not process the uploaded report(s): `{exc}`").send()

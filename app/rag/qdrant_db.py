@@ -1,6 +1,7 @@
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 from app.config.settings import settings
+from app.config.embeddings import EMBEDDING_DIMENSION, RAG_COLLECTION_NAME
 
 QDRANT_HOST = settings.QDRANT_URL or "localhost"
 QDRANT_PORT = settings.QDRANT_PORT or 6333
@@ -9,8 +10,8 @@ client = QdrantClient(
     url=f"http://{QDRANT_HOST}:{QDRANT_PORT}"
 )
 
-COLLECTION_NAME = "documents"
-VECTOR_SIZE = 1024
+COLLECTION_NAME = RAG_COLLECTION_NAME
+VECTOR_SIZE = EMBEDDING_DIMENSION
 
 
 def create_collection():
@@ -22,7 +23,15 @@ def create_collection():
     ]
 
     if COLLECTION_NAME in names:
-        print(f"Collection '{COLLECTION_NAME}' already exists.")
+        collection_info = client.get_collection(COLLECTION_NAME)
+        vector_size = collection_info.config.params.vectors.size
+        if vector_size != VECTOR_SIZE:
+            raise ValueError(
+                f"Qdrant collection '{COLLECTION_NAME}' uses vector size {vector_size}, "
+                f"but the app now requires {VECTOR_SIZE}. "
+                f"Create a new collection or reindex existing points with the shared embedding model."
+            )
+        print(f"Collection '{COLLECTION_NAME}' already exists with matching vector size.")
         return
 
     client.create_collection(

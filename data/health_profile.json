@@ -1,5 +1,5 @@
 {
-  "status": "🟡 Monitor",
+  "status": "🟢 Stable",
   "conditions": [
     "Stable angina",
     "Hypertension",
@@ -7,41 +7,35 @@
     "Hyperlipidemia",
     "Viral upper respiratory tract infection",
     "Post-viral cough",
-    "Acute inferior ST-elevation myocardial infarction (STEMI)"
+    "Borderline elevated fasting glucose",
+    "Elevated cholesterol levels"
   ],
   "medicines": [
     "Aspirin 81 mg orally once daily",
     "Atorvastatin 40 mg orally at night",
     "Metformin 1000 mg orally twice daily with meals",
     "Amlodipine 5 mg orally once daily",
-    "Losartan 50 mg orally once daily",
-    "Glyceryl trinitrate sublingual tablets as needed for chest pain",
-    "Aspirin 81 mg daily",
-    "Clopidogrel 75 mg daily",
-    "Atorvastatin 80 mg nightly",
-    "Metoprolol Succinate 50 mg daily",
-    "Ramipril 5 mg daily",
-    "Metformin 500 mg twice daily"
+    "Losartan 50 mg orally once daily"
   ],
   "allergies": [
     "No known drug allergies"
   ],
-  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The patient ID CLN-2026-001 has highly conflicting demographic and clinical data across multiple reports.\nThis profile has been updated by processing the 'Medical Discharge Summary.pdf' (for Patient Name: John Perera, Age: 58 years, Sex: Male, Hospital Number: MRN-2026-104582, hospitalization 12-15 June 2026), which details stable angina, hypertension, type 2 diabetes mellitus, and hyperlipidemia.\nHowever, the profile's patient demographics (age 45, sex Male) and current clinical context (viral upper respiratory tract infection with post-viral cough, vitals: BP 128/82, HR 78, Temp 37.2, SpO2 97%) still reflect data from a *subsequent* 'Clinical Consultation Report' (sample_clinical_report_01.pdf) for CLN-2026-001 (Age: 45, Sex: Male). This age (45) aligns with the primary profile's *original* patient ID (CLN-2026-001, age 45, sex Male), but directly contradicts the 'John Perera' and 'John Smith' data from discharge summaries.\nThe retention of 'John Perera' and hospital number 'MRN-2026-104582' (from the age 58 patient) alongside the age 45 and viral URI context (from the age 45 patient) exacerbates the demographic and clinical inconsistency, strongly suggesting data for two distinct patients has been merged under CLN-2026-001. Urgent clarification is required regarding the true identity and medical history associated with CLN-2026-001.\n(Previous note: Demographic details in a prior Laboratory Investigation Report (LAB-2026-014, age 62, sex Female) also conflicted with the primary profile.)\nNew medical report details acute inferior STEMI, with successful PCI and stent placement. Discharge medications include Aspirin, Clopidogrel, Atorvastatin, Metoprolol, Ramipril, and Metformin.",
+  "notes": "SEVERE DEMOGRAPHIC CONFLICT: The patient ID CLN-2026-001 has highly conflicting demographic and clinical data across multiple reports.\nThis profile has been updated by processing the 'Clinical Consultation Report' (Patient ID: CLN-2026-001, Age: 45, Sex: Male) which details a viral upper respiratory tract infection with post-viral cough. The patient's demographics (age 45, sex male) align with the primary profile's original data (CLN-2026-001), but contradict the 'John Perera' and hospital number 'MRN-2026-104582' from a discharge summary (which references age 58). This suggests that data for two distinct patients has been merged under CLN-2026-001. The diagnosis of acute inferior ST-elevation myocardial infarction (STEMI) previously listed in the profile is contradicted by this report and must be considered erroneous or misattributed.\nVitals on consultation: BP 128/82 mmHg, HR 78 bpm, Temp 37.2°C, SpO2 97%.\nLab results show normal creatinine (0.9 mg/dL), HbA1c 7.8%, fasting glucose 162 mg/dL, LDL 148 mg/dL. No acute cardiac injury or infection detected.\nThe presence of viral upper respiratory tract infection and post-viral cough is noted in this report but is unrelated to cardiac symptoms.\nDischarge medications reflect stable angina management with no anticoagulant therapy beyond aspirin. Clopidogrel and atorvastatin were not prescribed during discharge. The previously listed 'acute inferior STEMI' is inconsistent with findings and must be corrected or clarified.\nNew report confirms the viral upper respiratory tract infection with post-viral cough and recommends hydration, symptomatic treatment, and follow-up in 2 weeks if symptoms persist.\nNew laboratory investigation report (Patient ID: LAB-2026-014, Age: 62, Sex: Female) shows borderline elevated fasting glucose and cholesterol levels, suggesting the need for dietary modification and regular exercise. Latest lab results: Hemoglobin 12.8 g/dL, WBC Count 7.4 x10^9/L, Platelets 260 x10^9/L, Fasting Blood Glucose 118 mg/dL, Total Cholesterol 212 mg/dL.\nFollow-up report confirms persistent cough and mild shortness of breath for 2 weeks, with a dry cough worsening at night and occasional fatigue. Physical examination shows temperature 37.2°C, BP 128/82 mmHg, HR 78 bpm, SpO2 97%. Assessment is likely viral upper respiratory tract infection with post-viral cough, and the plan is hydration, symptomatic treatment, and follow-up in 2 weeks if symptoms persist.",
   "vitals": {
-    "temperature_c": 36.8,
-    "blood_pressure_mmhg": "156/94",
-    "heart_rate_bpm": 102,
+    "temperature_c": 37.2,
+    "blood_pressure_mmhg": "128/82",
+    "heart_rate_bpm": 78,
     "spo2_percent": 97,
-    "respiratory_rate_bpm": 20
+    "respiratory_rate_bpm": null
   },
-  "chief_complaint": "Chest pain radiating to the left arm for approximately two hours, associated with sweating and mild shortness of breath.",
-  "history_of_present_illness": "The patient presented to the emergency department after experiencing sudden onset central chest pain while walking. The pain was described as heavy, 8/10 in intensity, radiating to the left shoulder and arm.",
+  "chief_complaint": "Persistent cough and mild shortness of breath for 2 weeks.",
+  "history_of_present_illness": "Patient reports a dry cough worsening at night. No chest pain. Occasional fatigue.",
   "patient_demographics": {
     "patient_id": "CLN-2026-001",
-    "name": "John Smith",
-    "age": 58,
+    "name": "John Perera",
+    "age": 45,
     "sex": "Male",
-    "hospital_number": "MRN-458721"
+    "hospital_number": "MRN-2026-104582"
   },
   "lab_results": {
     "date_of_report": "2026-07-18",
@@ -54,12 +48,43 @@
       "Lipid Profile"
     ],
     "results": {
-      "ECG Findings": "ST-segment elevation in leads II, III, and aVF, consistent with an acute inferior STEMI",
-      "Cardiac Troponin": "12.6 ng/mL",
-      "CBC": "Within normal limits",
-      "Serum Creatinine": "Within normal limits",
-      "Random Blood Glucose": "198 mg/dL",
-      "Lipid Profile": "Elevated total cholesterol (238 mg/dL), LDL cholesterol (162 mg/dL), HDL cholesterol (39 mg/dL), and triglycerides (214 mg/dL)"
+      "ECG Findings": "Nonspecific ST-segment changes without evidence of acute ST-elevation",
+      "Cardiac Troponin": "Within normal reference range",
+      "CBC": "Unremarkable",
+      "Serum Creatinine": "0.9 mg/dL with eGFR >90 mL/min/1.73 m²",
+      "Random Blood Glucose": "162 mg/dL",
+      "HbA1c": "7.8%",
+      "Lipid Profile": "Elevated LDL cholesterol (148 mg/dL)"
+    },
+    "new_lab_results": {
+      "date_of_report": null,
+      "requested_tests": [
+        "Complete Blood Count (CBC)",
+        "Fasting Blood Glucose",
+        "Lipid Profile"
+      ],
+      "results": {
+        "Hemoglobin": "12.8 g/dL",
+        "WBC Count": "7.4 x10^9/L",
+        "Platelets": "260 x10^9/L",
+        "Fasting Blood Glucose": "118 mg/dL",
+        "Total Cholesterol": "212 mg/dL"
+      }
+    },
+    "latest_lab_results": {
+      "date_of_report": null,
+      "requested_tests": [
+        "Complete Blood Count (CBC)",
+        "Fasting Blood Glucose",
+        "Lipid Profile"
+      ],
+      "results": {
+        "Hemoglobin": "12.8 g/dL",
+        "WBC Count": "7.4 x10^9/L",
+        "Platelets": "260 x10^9/L",
+        "Fasting Blood Glucose": "118 mg/dL",
+        "Total Cholesterol": "212 mg/dL"
+      }
     }
   },
   "recommendations": [
@@ -69,9 +94,12 @@
     "Home blood glucose monitoring",
     "Low-sodium, heart-healthy diet",
     "Regular moderate exercise",
-    "Seek immediate medical attention if chest pain, severe shortness of breath, or fainting recurs",
+    "Seek immediate medical attention if chest pain becomes severe, persistent, occurs at rest, or is accompanied by shortness of breath, dizziness, or loss of consciousness",
     "Attend cardiac rehabilitation",
-    "Stop smoking completely"
+    "Stop smoking completely",
+    "Hydration, symptomatic treatment, follow-up in 2 weeks if symptoms persist",
+    "Dietary modification",
+    "Repeat testing in 3 months"
   ],
   "past_medical_history": [
     "Hypertension (10 years)",
@@ -81,7 +109,7 @@
     "No previous myocardial infarction",
     "Smoking (one pack of cigarettes daily for over 25 years)"
   ],
-  "assessment": "Acute inferior STEMI, treated with PCI and stent placement.",
-  "plan": "Hydration, symptomatic treatment, follow-up in 2 weeks if symptoms persist, cardiac rehabilitation, and smoking cessation.",
-  "last_updated": "2026-07-26"
+  "assessment": "Likely viral upper respiratory tract infection with post-viral cough. Stable angina with nonspecific ECG changes. No evidence of acute myocardial infarction or cardiac injury. Borderline elevated fasting glucose and cholesterol levels.",
+  "plan": "Hydration, symptomatic treatment, follow-up in 2 weeks if symptoms persist, lifestyle modification, improved medication compliance, smoking cessation, dietary modification, and regular exercise.",
+  "last_updated": "2026-07-29"
 }

@@ -634,7 +634,7 @@
     "duration_minutes": 30,
     "max_patients": 8,
     "booked_patients": 2,
-    "status": "cancelled"
+    "status": "available"
   },
   {
     "schedule_id": "S050",

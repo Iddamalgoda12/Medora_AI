@@ -35,13 +35,18 @@ class AgentState(TypedDict, total=False):
     remaining_steps: RemainingSteps
     
     user_profile: dict[str, Any]
+
     memory: Any
+    conversation_summary: str
+
     tool_results: list[dict[str, Any]]
     conversation_context: str
     error: str
     active_domain: SupportedDomain
+
     response: str
     final_response: str
+    
     execution_trace: list[str]
     routing_reason: str
     domain_context: DomainContext
