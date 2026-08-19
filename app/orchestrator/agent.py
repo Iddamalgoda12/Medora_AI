@@ -6,7 +6,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
 
 from app.llms.llm import llm
-from app.orchestrator.prompts import DOMAIN_GUIDE, RESPONSE_STYLE, SAFETY_RULES, SYSTEM_PROMPT
+from app.orchestrator.prompts import  SYSTEM_PROMPT
 from app.orchestrator.state import AgentState
 from app.tools.booking_tools import create_booking, get_booking, get_bookings, search_bookings
 from app.tools.doctor_tools import find_doctors, get_all_doctors, get_available_slots, get_doctor_details
@@ -61,10 +61,7 @@ def build_medora_agent() -> Any:
         tools=all_domain_tools,
         prompt="\n\n".join(
             [
-                SYSTEM_PROMPT,
-                DOMAIN_GUIDE,
-                SAFETY_RULES,
-                RESPONSE_STYLE,
+                SYSTEM_PROMPT
             ]
         ),
         state_schema=AgentState,

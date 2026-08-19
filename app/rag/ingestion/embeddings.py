@@ -1,4 +1,3 @@
-from pathlib import Path
 import pyarrow as pa
 
 if not hasattr(pa, "PyExtensionType"):
@@ -7,9 +6,7 @@ if not hasattr(pa, "PyExtensionType"):
 import torch
 from sentence_transformers import SentenceTransformer
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
-MODEL_PATH = BASE_DIR / "AI_MODELS" / "embeddings" / "bge-m3"
-FALLBACK_MODEL = "BAAI/bge-m3"
+from app.config.embeddings import EMBEDDING_MODEL_NAME, EMBEDDING_MODEL_PATH
 
 _embedding_model = None
 
@@ -23,7 +20,7 @@ def get_embedding_model() -> SentenceTransformer:
 
     if _embedding_model is None:
         device = _resolve_device()
-        model_name = str(MODEL_PATH) if MODEL_PATH.exists() else FALLBACK_MODEL
+        model_name = str(EMBEDDING_MODEL_PATH) if EMBEDDING_MODEL_PATH.exists() else EMBEDDING_MODEL_NAME
         _embedding_model = SentenceTransformer(model_name, device=device)
 
     return _embedding_model
