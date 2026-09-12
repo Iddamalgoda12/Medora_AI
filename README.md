@@ -1,5 +1,7 @@
 # MedoraAI
 
+> 🏆 **Championship Winner — Agentrix 2026 Agentic AI Hackathon, Organized by Faculty of Engineering ,University of Ruhuna ,Sri Lanka**
+
 MedoraAI is an agentic medical assistant that helps users navigate common healthcare tasks through a Chainlit chat interface. The current system is built around one central agent orchestrator that can call multiple healthcare tools for doctor discovery, appointment schedule lookup, hospitals and channeling centers, pharmacy search, emergency triage, medical document retrieval, and long-term memory.
 
 > MedoraAI is not a replacement for a doctor, pharmacist, emergency service, or licensed medical professional. It is designed to provide helpful guidance, route users to relevant healthcare resources, and escalate urgent situations.
