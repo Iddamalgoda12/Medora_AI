@@ -1,518 +1,231 @@
-MedoraAI
+# MedoraAI
 
-**Agentic Healthcare Assistant powered by Multi-Agent AI, Local RAG, and Intelligent Healthcare Routing**
+MedoraAI is an agentic medical assistant that helps users navigate common healthcare tasks through a Chainlit chat interface. The current system is built around one central agent orchestrator that can call multiple healthcare tools for doctor discovery, appointment schedule lookup, hospitals and channeling centers, pharmacy search, emergency triage, medical document retrieval, and long-term memory.
 
-MedoraAI is an AI-powered healthcare assistant that combines **Multi-Agent AI**, **Local Retrieval-Augmented Generation (RAG)**, **Large Language Models (LLMs)**, **Web Search**, and **Local Healthcare Databases** to provide accurate, context-aware healthcare assistance.
+> MedoraAI is not a replacement for a doctor, pharmacist, emergency service, or licensed medical professional. It is designed to provide helpful guidance, route users to relevant healthcare resources, and escalate urgent situations.
 
-The system intelligently analyzes user requests and routes them to specialized healthcare agents capable of handling:
+## What It Can Do
 
-* Doctor & hospital discovery
-* Medicine information and availability
-* Medical report analysis
-* Emergency healthcare guidance
-* General healthcare questions
+- Find doctors by specialty, city, hospital, language, gender, fee range, rating, experience, and availability.
+- Search appointment schedules and available doctor slots from the local schedule database.
+- Find hospitals and channeling centers, including emergency-capable hospitals.
+- Search pharmacies and medicine-related availability data from local pharmacy records.
+- Triage urgent symptoms and provide basic emergency guidance.
+- Search uploaded medical documents using the local RAG pipeline.
+- Remember useful long-term health context with Mem0 and maintain a compact conversation summary.
+- Provide a Chainlit frontend with health profile/sidebar support and PDF report upload workflow.
 
----
-
-Key Features
-
-✅ Multi-Agent Healthcare Workflow
-
-✅ Intelligent Decision Engine Routing
-
-✅ Appointment Discovery
-
-✅ Local Pharmacy Database
-
-✅ Emergency Detection
-
-✅ Medical Report Analysis
-
-✅ Local RAG Knowledge Retrieval
-
-✅ BGE-M3 Embeddings
-
-✅ Qdrant Vector Search
-
-✅ Cross-Encoder Re-Ranking
-
-✅ Tavily Web Search
-
-✅ Chainlit Frontend
-
----
-
- System Architecture
+## Architecture
 
 ```text
-                    ┌─────────────┐
-                    │    User     │
-                    └──────┬──────┘
-                           │
-                           ▼
-                 ┌─────────────────┐
-                 │ Decision Engine │
-                 └────────┬────────┘
-                          │
-        ┌─────────────────┼─────────────────┐
-        ▼                 ▼                 ▼
- Appointment Agent   Pharmacy Agent   Report Agent
-
-        ▼                 ▼                 ▼
- Emergency Agent    Clarifier Agent  Direct Answer Agent
+User
+  |
+  v
+Chainlit Frontend
+  |
+  v
+main.run_agent()
+  |
+  +--> Load long-term memory and conversation summary
+  |
+  v
+Medora Agent Orchestrator
+  |
+  +--> Doctor Tools
+  +--> Schedule Tools
+  +--> Hospital / Channeling Center Tools
+  +--> Pharmacy Tools
+  +--> Emergency Tools
+  +--> RAG Document Search Tool
+  |
+  v
+Final healthcare response
+  |
+  v
+Save memory and update conversation summary
 ```
 
-The **Decision Engine** acts as the central router, selecting the most appropriate agent based on user intent and managing the overall workflow.
+The orchestrator lives in `app/orchestrator/agent.py`. It uses LangGraph's ReAct agent pattern with a single shared medical system prompt and a tool list covering the healthcare domains in the app.
 
----
-Agents
+## Main Components
 
-## Decision Engine
+### Agent Orchestrator
 
-The Decision Engine is responsible for:
+The central Medora agent decides which tool or sequence of tools should be used for each user request. It handles healthcare intent, appointment and schedule questions, medicine and pharmacy lookup, document search, emergency assessment, and safe final response generation.
 
-* Intent Classification
-* Agent Selection
-* Workflow Orchestration
-* State Management
+Key files:
 
----
+- `app/orchestrator/agent.py`
+- `app/orchestrator/prompts.py`
+- `app/orchestrator/state.py`
 
-## Appointment Agent
+### Tools
 
-Helps users discover healthcare providers.
+Tools are the domain actions available to the orchestrator:
 
-### Capabilities
+- `app/tools/doctor_tools.py` - doctor search, doctor details, available slots, doctor availability.
+- `app/tools/schedule_tools.py` - available schedule search, schedule details, doctor schedules.
+- `app/tools/hospital_tools.py` - hospitals, channeling centers, emergency hospitals.
+- `app/tools/pharmacy_tools.py` - pharmacy search and pharmacy details.
+- `app/tools/emergency_tools.py` - symptom triage, emergency assessment, emergency protocols.
+- `app/tools/rag_tools.py` - semantic search over uploaded medical documents.
 
-* Extract doctor specialty
-* Extract location
-* Detect missing information
-* Request clarification when necessary
-* Search doctors and hospitals using Tavily
-* Recommend healthcare providers
+### Local Data
 
-### Example
+The app uses JSON datasets for local healthcare information:
 
-**User**
+- `app/database/doctors.json`
+- `app/database/schedules.json`
+- `app/database/hospitals.json`
+- `app/database/channeling_centers.json`
+- `app/database/pharmacies.json`
 
-```text
-I need a cardiologist in Colombo
-```
+### RAG System
 
-**Response**
+MedoraAI includes a local Retrieval-Augmented Generation pipeline for uploaded medical reports and healthcare documents.
 
-```text
-Recommended Cardiologists
-Recommended Hospitals
-Available Healthcare Providers
-```
+- Embedding model: `BAAI/bge-m3`
+- Vector database: Qdrant
+- Reranking: FlagEmbedding / reranker flow
+- Collection name: `documents_bge_m3_1024`
 
----
+Key files:
 
-## Clarifier Agent
+- `app/rag/ingestion/`
+- `app/rag/retrieval/`
+- `app/rag/qdrant_db.py`
+- `app/config/embeddings.py`
 
-Collects missing information required by other agents.
+### Memory
 
-Examples:
+The app uses Mem0 with Qdrant-backed storage for long-term memory. It also keeps a short recent chat window and summarizes older conversation context so medical discussions remain coherent without sending the full history every time.
 
-* Doctor specialty
-* Location
-* Appointment preferences
+Key files:
 
----
+- `app/memory/mem0_service.py`
+- `app/memory/conversation.py`
+- `app/nodes/memory_node.py`
+- `app/nodes/memory_save_node.py`
 
-## Pharmacy Agent
+### Chainlit Frontend
 
-Uses a local pharmacy database for medicine retrieval.
+The UI is built with Chainlit. Users can chat with the medical agent, maintain a health profile, and upload medical report PDFs for RAG ingestion and later question answering.
 
-### Database
+Key files:
 
-```text
-pharmacy_mock.db
-```
+- `app/ui/chainlit_app.py`
+- `app/ui/home.py`
+- `app/ui/health_profile_sidebar.py`
+- `app/ui/report_upload_workflow.py`
+- `public/custom.css`
 
-### Capabilities
 
-* Medicine lookup
-* Alternative medicine suggestions
-* Availability checking
-* Fast local retrieval
+## Setup
 
----
-
-## Report Agent
-
-Analyzes medical reports and healthcare documents.
-
-### Capabilities
-
-* Medical report summarization
-* Key finding extraction
-* Clinical insight generation
-* Patient-friendly explanations
-
----
-
-## Emergency Agent
-
-Detects healthcare emergencies and prioritizes patient safety.
-
-### Detects
-
-* Chest pain
-* Difficulty breathing
-* Stroke symptoms
-* Severe bleeding
-* Other urgent medical conditions
-
-### Response
-
-Provides immediate emergency recommendations and escalation guidance.
-
----
-
-## Direct Answer Agent
-
-Handles general healthcare questions that do not require specialized workflows.
-
----
-
-Local RAG Pipeline
-
-MedoraAI uses a fully local Retrieval-Augmented Generation (RAG) architecture.
-
-## Embedding Model
-
-### BGE-M3
-
-Used for generating dense vector embeddings.
-
-Benefits:
-
-* High-quality retrieval
-* Multi-lingual support
-* Efficient semantic search
-
----
-
-## Vector Database
-
-### Qdrant
-
-Runs locally for privacy-preserving document retrieval.
-
-Benefits:
-
-* Low latency
-* Local storage
-* No external vector database dependency
-
----
-
-## Re-Ranker
-
-### Cross-Encoder Re-Ranker
-
-Improves retrieval quality by re-ranking candidate documents before passing them to the LLM.
-
----
-
-## RAG Workflow
-
-```text
-User Query
-    │
-    ▼
-BGE-M3 Embedding
-    │
-    ▼
-Qdrant Vector Search
-    │
-    ▼
-Top-K Documents
-    │
-    ▼
-Cross-Encoder Re-Ranker
-    │
-    ▼
-Relevant Context
-    │
-    ▼
-LLM Response
-```
-
-This pipeline significantly improves response accuracy while reducing hallucinations.
-
----
-
-Data Sources
-
-## Medical Knowledge Base
-
-Location:
-
-```text
-app/rag/data/pdfs/
-```
-
-Current Sample Documents:
-
-```text
-sample_clinical_report_01.pdf
-sample_clinical_report_02.pdf
-```
-
----
-
-## Local Pharmacy Database
-
-```text
-pharmacy_mock.db
-```
-
-Used by the Pharmacy Agent for medicine lookup and recommendations.
-
----
-
-## Web Search
-
-Powered by **Tavily Search API**
-
-Used for:
-
-* Doctor discovery
-* Hospital search
-* Healthcare provider recommendations
-
----
-
-#Technology Stack
-
-## Backend
-
-* Python
-* AsyncIO
-* LangGraph
-
-## LLM
-
-* Gemini 2.5 Flash
-
-## Retrieval
-
-* BGE-M3
-* Qdrant
-* Cross-Encoder Re-Ranker
-
-## Search
-
-* Tavily
-
-## Memory
-
-* Mem0
-
-## Frontend
-
-* Chainlit
-
----
-
-#Project Structure
-
-```text
-app/
-├── agents/
-├── config/
-├── graphs/
-├── llms/
-├── memory/
-├── nodes/
-├── rag/
-├── tools/
-└── main.py
-
-frontend/
-├── app.py
-├── chainlit.md
-└── public/
-
-qdrant/
-├── storage/
-└── snapshots/
-
-pharmacy_mock.db
-README.md
-requirements.txt
-```
-
----
-
-#Installation
-
-## 1. Clone Repository
+### 1. Create a virtual environment
 
 ```bash
-git clone <repository-url>
-cd AGENTRIX26-TEAM32-AGENTleMEN
+python -m venv .venv
+source .venv/bin/activate
 ```
 
-## 2. Create Virtual Environment
-
-### Linux / macOS
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
----
-
-## 3. Install Dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 3. Configure environment variables
 
-## 4. Configure Environment Variables
-
-Create a `.env` file:
+Create a `.env` file in the project root.
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key
-TAVILY_API_KEY=your_tavily_api_key
+# Choose one: lmstudio, gemini, groq
+LLM_PROVIDER=lmstudio
 
-QDRANT_URL=http://localhost
+# LM Studio
+LMSTUDIO_BASE_URL=http://127.0.0.1:1234
+LMSTUDIO_API_KEY=lm-studio
+LMSTUDIO_MODEL=your-local-model-name
+
+# Gemini
+GEMINI_API_KEY=
+GEMINI_MODEL=Gemini 2.5 Flash Lite
+
+# Groq
+GROQ_API_KEY=
+GROQ_MODEL=
+
+# Required by settings
+GEOAPIFY_API_KEY=your-geoapify-key
+
+# Optional
+TAVILY_API_KEY=
+QDRANT_URL=localhost
 QDRANT_PORT=6333
+REDIS_HOST=
+REDIS_PORT=
+LANGSMITH_API_KEY=
 ```
 
----
+### 4. Start Qdrant
 
-## 5. Start Qdrant
+Mem0 and the RAG system expect Qdrant to be available. A common local option is Docker:
 
 ```bash
-docker run -p 6333:6333 \
--v $(pwd)/qdrant:/qdrant/storage \
-qdrant/qdrant
+docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
 ```
 
-Verify:
+### 5. Run the Chainlit app
 
 ```bash
-curl http://localhost:6333
+chainlit run app/ui/chainlit_app.py
 ```
 
----
-
-## 6. Ingest Medical Documents
-
-Place PDFs inside:
-
-```text
-app/rag/data/pdfs/
-```
-
-Run:
-
-```bash
-python -m app.rag.ingestion.ingestion
-```
-
-This process:
-
-* Loads PDFs
-* Chunks documents
-* Creates BGE-M3 embeddings
-* Stores vectors in Qdrant
-
----
-
-## 7. Seed Pharmacy Database
-
-```bash
-python -m app.tools.seed_pharmacy_db
-```
-
-Creates:
-
-```text
-pharmacy_mock.db
-```
-
----
-
-## 8. Run Backend
-
-```bash
-python -m app.main
-```
-
----
-
-## 9. Run Frontend
-
-```bash
-chainlit run frontend/app.py -w
-```
-
-Application:
+Then open the local Chainlit URL shown in the terminal, usually:
 
 ```text
 http://localhost:8000
 ```
 
----
-
-#Example Queries
-
-### Appointment Agent
+## Example Prompts
 
 ```text
-I need a cardiologist in Colombo
+Find me a cardiologist in Colombo.
 ```
-
-### Pharmacy Agent
 
 ```text
-Do you have Paracetamol?
+Are there any dermatologists available tomorrow?
 ```
-
-### Emergency Agent
 
 ```text
-I have chest pain and difficulty breathing
+Find a pharmacy near Kandy.
 ```
-
-### Report Agent
 
 ```text
-Summarize this medical report
+I have chest pain and shortness of breath. What should I do?
 ```
 
----
+```text
+Can you explain my uploaded blood report?
+```
 
-#Future Improvements
+## Medical Safety
 
-* Appointment Booking Integration
-* Hospital Scheduling APIs
-* Expanded Medical Knowledge Base
-* Enhanced Patient Memory
-* Multi-Language Support
-* Electronic Medical Record (EMR) Integration
+MedoraAI is built to prioritize safety:
 
----
+- It should escalate possible emergencies immediately.
+- It should avoid inventing doctors, hospitals, schedules, medicine facts, or prices.
+- It should use local tool results where available.
+- It should communicate uncertainty clearly.
+- It should recommend professional medical care when appropriate.
 
-#Team
+For emergencies, users should contact local emergency services or go to the nearest emergency department immediately.
 
-**AGENTRIX26 – TEAM32 – AGENTleMEN**
+## Development Notes
 
-Built for the Agentrix Hackathon
+- `main.py` creates the initial state and runs each user turn.
+- Memory is loaded before the agent runs and saved after the response.
+- Uploaded reports are processed through the Chainlit report upload workflow and indexed into Qdrant.
+- The local healthcare datasets are currently JSON files under `app/database/`.
+- The current implementation uses one orchestrator agent with many tools, rather than separate standalone agents.
